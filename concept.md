@@ -17,3 +17,11 @@
 - [ ] スタイルセッテイング
 - [ ] 画像用意
 - [ ] マルチデバイス対応
+
+## 製作過程
+ ### sanitize.css適用
+  - レイアウト用にsanitize.cssを作成
+  - style.cssにて```@import url(sanitize.css)```記述
+
+ ### sectionの追加
+  - index.html内に```header```や```footer```などのセクションを設定
