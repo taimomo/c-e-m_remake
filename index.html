@@ -15,6 +15,8 @@
   <link rel="stylesheet" href="css/style.css">
   <!-- BootstrapのCSS読み込み -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/51807b857f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/jumbotron.css">
   </head>
   <body>
     <header>
@@ -26,21 +28,83 @@
         <a href="index.html">
           <img src="./img/logo.jpg" alt="ロゴ" width="300" height="60" border="0" /></a>
         </div>
-      </header>
-      <nav class="nav-bar">
-        
-      </nav>
-      <main>
 
-      </main>
-      <section>
-        <p>hello world</p>
-    <button type="button" class="btn btn-primary">Blue</button>
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <!-- <a class="navbar-brand" href="#">Navbar</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button> -->
+
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="dropdown02" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">会社紹介</a>
+              <div class="dropdown-menu" aria-labelledby="dropdown01">
+                <a class="dropdown-item" href="#">会社情報</a>
+                <a class="dropdown-item" href="#">業務内容</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">水力発電とは？</a>
+              <div class="dropdown-menu" aria-labelledby="dropdown01">
+                <a class="dropdown-item" href="#">水力発電の基礎知識</a>
+                <a class="dropdown-item" href="#">水車の種類</a>
+                <a class="dropdown-item" href="#">設置場所例</a>
+                </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">製品紹介</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">事例紹介</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">お問い合わせ</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main role="main">
+      <div class="jumbotron">
+        <div class="container">
+          <h1 class="display-3">いいことたくさん水力発電</h1>
+          <p>マイクロ水力発電の普及を目指して！</p>
+        </div>
+      </div>
     
-  </section>
-  <footer>
+      <div class="container">
+        <!-- Example row of columns -->
+        <div class="row">
+          <div class="col-md-4">
+            <h2>水力発電とは？</h2>
+            <p>河川・ダム・用水路...あちこちで見掛ける「水力発電」とはどんな物なのかご紹介します。</p>
+            <p><a class="btn btn-secondary" href="#" role="button">詳細 <i class="fas fa-angle-double-right"></i></a></p>
+          </div>
+          <div class="col-md-4">
+            <h2>取り扱い製品</h2>
+            <p>取り扱い製品の詳細をご紹介致します。主に50kW以下をメインターゲットとした水力発電機を取り扱っております。</p>
+            <p><a class="btn btn-secondary" href="#" role="button">詳細 <i class="fas fa-angle-double-right"></i></a></p>
+          </div>
+          <div class="col-md-4">
+            <h2>納入事例</h2>
+            <p>これまで弊社が販売・納入した水力発電所の事例をご紹介致します。</p>
+            <p><a class="btn btn-secondary" href="#" role="button">詳細 <i class="fas fa-angle-double-right"></i></a></p>
+          </div>
+        </div>
     
-  </footer>
+        <hr>
+    
+      </div> <!-- /container -->
+    
+    </main>
+    
+    <footer class="container">
+      <p>&copy; CEM Co.,Ltd All Rights Reserved. 2020</p>
+    </footer>
   
   <!-- jQuery読み込み -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
