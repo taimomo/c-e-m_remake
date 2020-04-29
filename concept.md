@@ -25,3 +25,12 @@
 
  ### sectionの追加
   - index.html内に```header```や```footer```などのセクションを設定
+
+ ### トップページのtext作成
+  - メインとなるタグや文章を大まかに記載。
+  - 画像やデザインは追々設定
+  - bootstrapやfontawesomeのCDN記述
+  
+ ### 共通部分のinclude設定
+  - headerやfooterなどの共通部分を個別に切り分け全ページで共有。
+  - SSIが使えるか分からないのでjavascriptで記述
