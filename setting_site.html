@@ -1,29 +1,163 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>株式会社シーイーエム：水力発電とは</title>
-  <link rel="stylesheet" href="css/style.css">
-  <!-- BootstrapのCSS読み込み -->
-  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-  <script src="https://kit.fontawesome.com/51807b857f.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="css/jumbotron.css">
-</head>
-<body>
-  <div id="header"></div>
-  <div id="footer"></div>
-  <p>hello water<i class="fab fa-android"></i></p>
-  <!-- jQuery読み込み -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <!-- BootstrapのJS読み込み -->
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-  <script src="javascript/main.js"></script>
-  <script>
-    $(function(){
-      $("#header").load("./include/header.html");
-      $("#footer").load("./include/footer.html");
-    });
-  </script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>株式会社シーイーエム：水力発電とは</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- BootstrapのCSS読み込み -->
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/51807b857f.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="css/jumbotron.css" />
+  </head>
+  <body>
+    <div id="header"></div>
+
+    <main>
+      <div class="container">
+        <section class="page-about hydro-features">
+          <div class="page-title-space hydro-features-space">
+            <h2 class="page-title">マイクロ水力の特徴</h2>
+          </div>
+          <div class="page-text">
+            <p>
+              マイクロ水力は100kW超の水力と比較し、単に規模が小さいだけではありません。<br />
+              独特でちょっと繊細なマイクロ水力の特徴を良し悪し両面で紹介します。
+            </p>
+          </div>
+        </section>
+
+        <section class="page-contents">
+          <div class="contents-title-space">
+            <h3 class="contents-title">マイクロ水力発電の良いところ</h3>
+          </div>
+          <ul class="contents-list">
+            <li class="contents-list-item">発電可能な場所が数多く存在する</li>
+            <div class="contents">
+              <p>
+                マイクロ水力の適地としては以下のような例が挙げられます
+              </p>
+              <!-- マイクロ水力適地の参考画像 -->
+              <p>
+                ダムや河川は従来から利用されてきましたが、マイクロ水力では農業用水路や上下水道といった日常生活により身近な水資源を利用できます。<br />
+                適地が多い分だけ門戸も広がるため、発電事業はまるで無縁と感じていた方々にも可能性が検討できるわけです。
+              </p>
+            </div>
+            <!-- 農業用水で発電の例 北陸の水車？ -->
+            <li class="contents-list-item">
+              従来のやり方に縛られない計画も可能
+            </li>
+            <div class="contents">
+              <p>
+                これまで日本で使用されてきた水車は「高落差で規模の大きい発電」を得意としており、その特性から配管必須な物や周辺の大改修が伴うケースが大半でした。<br />
+                <!-- 水車にはそれぞれ得手不得手があり、得意な条件下でなければ真価を発揮できないため、強引に不得手な環境に捻じ込んでも非効率な運用をする事になってしまいます。<br /> -->
+                <!-- 大規模な発電所の画像例 -->
+                今では海外製も含めて様々な水車が登場し、配管を使わなくても発電可能な製品もあるため、より現場に合わせた柔軟な設置が可能となっています。
+              </p>
+            </div>
+            <!-- 上掛け水車か何かの画像 -->
+            <li class="contents-list-item">諸手続きの簡素化</li>
+            <div class="contents">
+              <p>
+                発電事業を実施する際には数多くの申請・契約が絡んでくるためあらゆる手続きが避けては通れません。<br />
+                こうした手続きは発電所の規模が大きいほど重く複雑になるため、逆に規模の小さいマイクロ水力は相対的に手続きが簡素になります。<br />
+                例えば、電力会社と締結する契約には低圧連係・高圧連係の2種類がありますが、50kW未満の発電所ならば低圧連係になるため契約までの手続きがかなり簡素化されます。
+              </p>
+              <!-- 高圧・低圧の比較表 -->
+              <!-- <p>
+                また、発電所を運営する際に通常は主任技術者の選定が必要ですが、20kW未満の発電所ならばそうした選定が免除されるため資格に縛られる事なく発電所の運営が可能になります。
+              </p> -->
+              <!-- 主任技術者の中身と必要性 -->
+              <p>
+                日常生活でも様々な申請・契約が存在し「面倒！・訳がわからない！」と感じる場面が少なからずあるかと思いますが、事業関連となると専門の方以外にとっては「更に訳がわからない」となりがちです。<br />
+                そうした面倒を少しでも緩和できるのがマイクロ水力の強みです。
+              </p>
+            </div>
+          </ul>
+          <div class="contents">
+            <p>
+              こうして考えるとマイクロ水力発電可能な場所は日本全国各所に存在し、太陽光発電を追う形で中小水力の普及が進むように見えますが、実際には普及率が伸び悩み停滞を続けています。</p>
+              <!-- 各エネルギー普及率を抜粋 -->
+            <p>
+              あらゆる場所で活躍できそうなマイクロ水力がなぜ普及しないのか？残念ながら、以下のように切っても切り離せない悩みドコロも何点か存在するのです。
+            </p>
+          </div>
+        </section>
+
+        <section class="page-contents">
+          <div class="contents-title-space">
+            <h3 class="contents-title">マイクロ水力の悩みドコロ</h3>
+          </div>
+          <ul class="contents-list">
+            <li class="contents-list-item">水を利用する権利（水利権）が絡む場所が多いため時間も手間も掛かる。</li>
+            <!-- <div class="contents">
+              <p>
+                おそらく水力発電において最も有名かつ手強いアキレス腱のような存在でしょう。水には利用する権利、水利権が関わってくるのです。<br />
+                土地の所有権や水の増減等とは関係なく「ここの水を年間どれだけ何に使うか」は申請して許可が必要と定められており、困った事に発電に適した水資源の多くが関係しています。<br />
+                一応制度としては河川管理者に申請して許可を取ればOKなのですが、当然申請書一枚出して完了のはずもなく様々な調査や話し合いに基づいて記録・証明を提出しなければならないため、多大な労力と時間を費やす覚悟が必要です。
+              </p>
+            </div> -->
+            <li class="contents-list-item">
+              マイクロ水力でも建設費に数千・数億掛かる事も多いため、補助金等の利用がなければ採算性の面で規模の大きい水力に劣る。
+            </li>
+            <!-- <div class="contents">
+              <p>
+                二つ目の大きなネックです。数百・数千kW規模の発電を行う水力に対し、100kW未満のマイクロ水力は費用対効果に関してどうしても後塵を拝します。<br />
+                業界内では比較的小規模と言っても、マイクロ水力発電所に要する建設費用は決して安くはありません。発電規模に応じて指数関数的に建設費が安くなると限らず、むしろ建設単価（1kW発電に必要な建設費）は高くなりがちです。関連工事も含め数千万から数億かかる工事が殆どで、残念ながら補助金を利用しなければ投資回収に20年近く掛かる発電所もたくさん存在します。<br />
+                先述した水利権等の厄介ごとも踏まえると「掛ける労力に対して割りに合わない」と感じてしまう面があります。
+              </p>
+            </div> -->
+            <li class="contents-list-item">マイクロ水力に関する専門家がまだまだ少なく、上手くいかない・運営に多大な労力を要するケースが多い。</li>
+          </ul>
+          <div class="contents">
+            <p>
+              マイクロ水力は規模が小さい故に、ちょっとした想定外が事業計画に致命的な影響をもたらす事も少なくありません。<br>
+              （「落差50mで50cmの読み違い」は誤差の範囲ですが、「落差2mで50cmの読み違い」は深刻な差異になります）<br>
+              それなりに手間暇が掛かりデリケートな側面も持ち合わせているマイクロ水力は「掛ける労力に対して割りに合わない」と感じられてしまう分野でもあるのです。
+            </p>
+          </div>
+
+          <div class="contents">
+            <p>
+              このように手強い側面もあるマイクロ水力ですが、世界ではマイクロ水力が日常的な国も存在しますし、日本でもまた今身近にあるエネルギーを有効活用しようと奮闘される方々がたくさんいらっしゃいます。<br>
+              弊社もまた、少しでもそのような方々のお力になれればと思い日々活動を続けております。
+            </p>
+          </div>
+        </section>
+
+        <section class="page-end">
+          <div class="page-end-contents">
+            <p></p>
+            <a href="setting_site.html"
+              >弊社の取り組みへ <i class="fas fa-arrow-right"></i
+            ></a>
+          </div>
+        </section>
+      </div>
+    </main>
+    <div id="footer"></div>
+    <!-- jQuery読み込み -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- BootstrapのJS読み込み -->
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+    <script src="javascript/main.js"></script>
+    <script>
+      $(function () {
+        $("#header").load("./include/header.html");
+        $("#footer").load("./include/footer.html");
+      });
+    </script>
+  </body>
 </html>
