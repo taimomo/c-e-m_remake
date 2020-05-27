@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="css/jumbotron.css" />
   </head>
   <body>
-    <div id="header"></div>
+    <header></header>
 
     <main>
       <div class="container">
@@ -100,7 +100,7 @@
       </div>
     </main>
 
-    <div id="footer"></div>
+    <footer></footer>
     <!-- jQuery読み込み -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <!-- BootstrapのJS読み込み -->
@@ -112,8 +112,8 @@
     <script src="javascript/main.js"></script>
     <script>
       $(function () {
-        $("#header").load("./include/header.html");
-        $("#footer").load("./include/footer.html");
+        $("header").load("./include/header.html");
+        $("footer").load("./include/footer.html");
       });
     </script>
   </body>
