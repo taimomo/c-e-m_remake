@@ -62,3 +62,7 @@
   - サイドバーを表示。内容はとりあえず他へのリンク。
   - コンテンツの枠組みを抜本的に改良。全ページ（contact.html以外）を```<main><main-contents><article></article><aside></aside></main-contents></main>```の構成にする。
   - headerとfooterにdivが入っていたため削除
+
+ ### ページ全体のタグ調整
+  - mainとasideの区切りやarticleの使い方などが変なので修正。
+  - 中央のメインコンテンツをmainにし、classもmain絡みに変更。<br> サイドバーはasideにし、classもaside絡みに変更。
