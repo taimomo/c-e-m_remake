@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>株式会社シーイーエム：納入事例</title>
+    <title>株式会社シーイーエム:納入事例</title>
     <link rel="stylesheet" href="css/style.css" />
     <!-- BootstrapのCSS読み込み -->
     <link
@@ -21,32 +21,32 @@
   <body>
     <header></header>
 
+    <div class="breadcrumb-trail">
+      <div>
+        <p><a href="">Home</a> > マイクロ水力発電 : 納入事例</p>
+      </div>
+    </div>
+
     <div class="wrapper">
       <main>
         <div class="main-contents">
           <section class="page-about case-info">
-            <div class="page-title-space product-info-space">
-              <h2 class="page-title">納入事例</h2>
+            <div class="contents-title-space">
+              <h2 class="contents-title">EXAMPLES 納入事例</h2>
             </div>
-            <div class="page-text">
-              <p>弊社がこれまで手掛けた納入事例をご紹介致します。<br /></p>
-              <ul class="contents-link">
-                <li class="contents-link-item">
-                  <a href="case.html#azumino">有明地区 宮城発電所</a>
-                </li>
-                <li class="contents-link-item">
-                  <a href="case.html#seino">西濃用水 揖東・西郡発電所</a>
-                </li>
-                <li class="contents-link-item">
-                  <a href="case.html#syonai">庄内赤川地区 黒川発電所</a>
-                </li>
+
+            <div>
+              <ul>
+                <li><a href="">安曇野有明宮城発電所</a></li>
+                <li><a href="">田代陣の池ホタル谷発電所</a></li>
+                <li><a href="">西濃用水揖東・西郡発電所</a></li>
               </ul>
             </div>
           </section>
 
           <section class="case-contents">
             <div class="contents-title-space" id="azumino">
-              <h3 class="contents-title">有明地区 宮城発電所</h3>
+              <h3 class="contents-title">安曇野有明宮城発電所（長野県）</h3>
             </div>
             <div class="contents">
               <!-- 宮城発電所の画像 -->
@@ -93,6 +93,7 @@
             </div>
             <div class="contents">
               <!-- 揖東・西郡発電所の画像 -->
+              <img src="" alt="" />
               <table class="tb case-tb tb-2">
                 <tr>
                   <th>発電所名</th>
@@ -140,47 +141,45 @@
               </table>
             </div>
 
-            <div class="contents-title-space" id="syonai">
-              <h3 class="contents-title">庄内赤川地区 黒川発電所</h3>
+            <div class="contents-title-space" id="tashiro">
+              <h3 class="contents-title">田代陣の池ホタル谷発電所</h3>
             </div>
             <div class="contents">
               <!-- 黒川発電所の画像 -->
               <table class="tb case-tb tb-2">
                 <tr>
                   <th>発電所名</th>
-                  <td>庄内赤川地区 黒川発電所（2台設置）</td>
+                  <td>田代陣の池ホタル谷発電所</td>
                 </tr>
                 <tr>
                   <th>所在地</th>
                   <td>
-                    山形県鶴岡市黒川
+                    宮崎県えびの市大字末永
                   </td>
                 </tr>
                 <tr>
                   <th>設置方式</th>
-                  <td>配管接続式・開水路流れ込み式</td>
+                  <td>配管接続式</td>
                 </tr>
                 <tr>
                   <th>最大流量</th>
-                  <td>0.66㎥/s（両機）</td>
+                  <td>0.4㎥/s</td>
                 </tr>
                 <tr>
                   <th>最大有効落差</th>
                   <td>
-                    7.6m <br />
-                    3.8m
+                    5.9m
                   </td>
                 </tr>
                 <tr>
                   <th>最大出力</th>
                   <td>
-                    29.5kW <br />
-                    14.7kW
+                    13.9kW
                   </td>
                 </tr>
                 <tr>
                   <th>管理者</th>
-                  <td>庄内赤川土地改良区</td>
+                  <td>えびの市土地改良区</td>
                 </tr>
                 <tr>
                   <th>電力用途</th>
@@ -190,16 +189,13 @@
             </div>
           </section>
 
-          <section class="page-end">
-            <div class="return-top">
-              <a href="index.html"
-                >トップへ戻る <i class="fas fa-arrow-right"></i
-              ></a>
+          <div>
+            <div>
+              <p>トップへ</p>
             </div>
-          </section>
+          </div>
         </div>
       </main>
-      <aside></aside>
     </div>
     <hr />
 
@@ -216,7 +212,6 @@
     <script>
       $(function () {
         $("header").load("./include/header.html");
-        $("aside").load("./include/aside.html");
         $("footer").load("./include/footer.html");
       });
     </script>
