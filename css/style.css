@@ -5,6 +5,11 @@ html {
   font-size: 100%;
 }
 
+body {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  line-height: 1.7;
+}
+
 h1 {
   font-size: 2rem;
 }
@@ -17,15 +22,32 @@ p {
   color: red;
 }
 
+a {
+  text-decoration: none;
+}
+
 .wrapper {
   display: flex;
   justify-content: space-between;
 }
 
 main {
-  width: 75%;
+  width: 100%;
 }
 
-aside {
-  width: 23%;
+.header-contents {
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+}
+
+.head-logo {
+  width: 200px;
+  height: 60px;
+  background-color: #fff;
+}
+.logo {
+  width: 80%;
+  height: 80%;
 }
