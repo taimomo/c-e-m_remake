@@ -1,49 +1,21 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="475px" height="138px" viewBox="0 0 475 138" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <title>ロゴ（テキスト込）</title>
-    <defs>
-        <filter x="0.0%" y="0.0%" width="100.0%" height="100.0%" filterUnits="objectBoundingBox" id="filter-1">
-            <feGaussianBlur stdDeviation="0" in="SourceGraphic"></feGaussianBlur>
-        </filter>
-        <filter x="0.0%" y="0.0%" width="100.0%" height="100.0%" filterUnits="objectBoundingBox" id="filter-2">
-            <feGaussianBlur stdDeviation="0" in="SourceGraphic"></feGaussianBlur>
-        </filter>
-        <filter x="0.0%" y="0.0%" width="100.0%" height="100.0%" filterUnits="objectBoundingBox" id="filter-3">
-            <feGaussianBlur stdDeviation="0" in="SourceGraphic"></feGaussianBlur>
-        </filter>
-        <filter x="0.0%" y="0.0%" width="100.0%" height="100.0%" filterUnits="objectBoundingBox" id="filter-4">
-            <feGaussianBlur stdDeviation="0" in="SourceGraphic"></feGaussianBlur>
-        </filter>
-        <filter x="0.0%" y="0.0%" width="100.0%" height="100.0%" filterUnits="objectBoundingBox" id="filter-5">
-            <feGaussianBlur stdDeviation="0" in="SourceGraphic"></feGaussianBlur>
-        </filter>
-        <filter x="0.0%" y="0.0%" width="100.0%" height="100.0%" filterUnits="objectBoundingBox" id="filter-6">
-            <feGaussianBlur stdDeviation="0" in="SourceGraphic"></feGaussianBlur>
-        </filter>
-    </defs>
-    <g id="ロゴ（テキスト込）" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Group" transform="translate(-1.000000, 2.000000)">
-            <text id="Consulting-&amp;-Enginee" font-family="YuMin-Extrabold, YuMincho" font-size="21" font-weight="600" fill="#203B8C">
-                <tspan x="162" y="64">Consulting &amp; Engineering </tspan>
-                <tspan x="162" y="85">of Manufacturing</tspan>
-            </text>
-            <g id="ロゴ" font-family="Helvetica-BoldOblique, Helvetica" font-size="60" font-style="italic" font-weight="bold">
-                <text id="CEM" transform="translate(93.029191, 70.408886) rotate(-10.000000) translate(-93.029191, -70.408886) " fill="#2E4E8C">
-                    <tspan x="13.3847817" y="78.1679217">CEM</tspan>
-                </text>
-                <text id="CEM" filter="url(#filter-2)" transform="translate(91.581111, 68.734187) rotate(-10.000000) translate(-91.581111, -68.734187) " fill="#8C93AD">
-                    <tspan x="11.9367015" y="76.4932229">CEM</tspan>
-                </text>
-                <text id="CEM" filter="url(#filter-4)" transform="translate(90.133031, 67.059488) rotate(-10.000000) translate(-90.133031, -67.059488) " fill="#0A5AA3">
-                    <tspan x="10.4886214" y="74.8185241">CEM</tspan>
-                </text>
-                <text id="CEM" filter="url(#filter-6)" transform="translate(88.684951, 65.384789) rotate(-10.000000) translate(-88.684951, -65.384789) " fill="#8C93AD">
-                    <tspan x="9.04054118" y="73.1438254">CEM</tspan>
-                </text>
-                <text id="CEM" transform="translate(87.236871, 63.710090) rotate(-10.000000) translate(-87.236871, -63.710090) " fill="#203B8C">
-                    <tspan x="7.59246101" y="71.4691266">CEM</tspan>
-                </text>
-            </g>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="424.39" height="84.325" viewBox="0 0 424.39 84.325">
+  <defs>
+    <clipPath id="clip-path">
+      <rect y="1" width="424.39" height="84.325" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="ロゴ_テキスト込み" data-name="ロゴ　テキスト込み" transform="translate(0 -1)" clip-path="url(#clip-path)" style="isolation: isolate">
+    <g id="ロゴ_テキスト込_" data-name="ロゴ（テキスト込）" transform="translate(0 0.4)">
+      <g id="Group">
+        <text id="Consulting_Enginee" data-name="Consulting &amp; Enginee" transform="translate(160.39 20.771)" fill="#203b8c" font-size="21" font-family="YuMin-Extrabold, YuMincho" font-weight="800"><tspan x="0" y="18">Consulting &amp; Engineering </tspan><tspan x="0" y="50">of Manufacturing</tspan></text>
+        <g id="ロゴ">
+          <text id="CEM" transform="matrix(0.985, -0.174, 0.174, 0.985, 5.599, 30.989)" fill="#2e4e8c" font-size="60" font-family="Helvetica-BoldOblique, Helvetica" font-weight="700" font-style="oblique"><tspan x="0" y="46">CEM</tspan></text>
+          <text id="CEM-2" data-name="CEM" transform="matrix(0.985, -0.174, 0.174, 0.985, 4.199, 29.87)" fill="#8c93ad" font-size="60" font-family="Helvetica-BoldOblique, Helvetica" font-weight="700" font-style="oblique"><tspan x="0" y="46">CEM</tspan></text>
+          <text id="CEM-3" data-name="CEM" transform="matrix(0.985, -0.174, 0.174, 0.985, 2.8, 28.752)" fill="#0a5aa3" font-size="60" font-family="Helvetica-BoldOblique, Helvetica" font-weight="700" font-style="oblique"><tspan x="0" y="46">CEM</tspan></text>
+          <text id="CEM-4" data-name="CEM" transform="matrix(0.985, -0.174, 0.174, 0.985, 1.4, 27.634)" fill="#8c93ad" font-size="60" font-family="Helvetica-BoldOblique, Helvetica" font-weight="700" font-style="oblique"><tspan x="0" y="46">CEM</tspan></text>
+          <text id="CEM-5" data-name="CEM" transform="matrix(0.985, -0.174, 0.174, 0.985, 0, 26.515)" fill="#203b8c" font-size="60" font-family="Helvetica-BoldOblique, Helvetica" font-weight="700" font-style="oblique"><tspan x="0" y="46">CEM</tspan></text>
         </g>
+      </g>
     </g>
+  </g>
 </svg>
