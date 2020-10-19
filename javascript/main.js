@@ -2,20 +2,18 @@
 {
   // headerとfooterの表示
   $(function () {
-    $("header").load("./include/header.html");
+    // $("header").load("./include/header.html");
     $("footer").load("./include/footer.html");
   });
 
   // 隠れているメニュー表示
   $(document).ready(function () {
-    $(".el_nav-item").hover(
-      function () {
-        // $("ul:not(:animated)", this).slideDown();
+    $(document).on("click", ".el_nav-text", function () {
+      if ($(".bl_list-dropdown", this).css("display") == "none") {
         $(".bl_list-dropdown", this).slideDown();
-      },
-      function () {
+      } else {
         $(".bl_list-dropdown", this).slideUp();
       }
-    );
+    });
   });
 }

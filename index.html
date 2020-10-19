@@ -37,7 +37,73 @@
     <link rel="icon" href="img/logo.svg" />
   </head>
   <body>
-    <header class="ly_header hl_sec-drops el_bg-menu hl_index"></header>
+    <header>
+      <div class="ly_header hl_sec-drops el_bg-menu hl_index">
+        <div class="el_header-logo hl_textPosi-c">
+          <a href="index.html">
+            <img class="logo" src="img/logo_text.svg" alt="ロゴ" />
+            <img class="logo_s" src="img/logo.svg" alt="ロゴ" />
+          </a>
+        </div>
+        <!-- /.el_header-logo -->
+
+        <button type="button" class="el_btn-hm">
+          <span class="el_btn-display"><i class="fas fa-bars"></i></span>
+        </button>
+        <nav class="bl_header-nav el_bg-menu">
+          <ul class="bl_nav-list">
+            <li class="el_nav-item el_nav-text hl_text-drops">
+              <a href="index.html">HOME</a>
+            </li>
+            <li class="el_nav-text hl_point">
+              <p class="el_nav-item hl_text-drops hl_text-w">
+                会社案内 <i class="fas fa-angle-down"></i>
+              </p>
+              <ul class="bl_list-dropdown el_bg-menu">
+                <li class="el_nav-text el_dropdown-text hl_text-drops">
+                  <a href="about.html#company" class="dropdown-link"
+                    >企業情報</a
+                  >
+                </li>
+                <li class="el_nav-text el_dropdown-text hl_text-drops">
+                  <a href="about.html#business" class="dropdown-link"
+                    >業務内容</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="el_nav-text hl_point">
+              <p class="el_nav-item hl_text-drops hl_text-w">
+                マイクロ水力発電 <i class="fas fa-angle-down"></i>
+              </p>
+              <ul class="bl_list-dropdown el_bg-menu">
+                <li class="el_dropdown-text el_nav-text hl_text-drops">
+                  <a href="micro-hydro.html" class="dropdown-link">
+                    マイクロ水力発電とは？
+                  </a>
+                </li>
+                <li class="el_dropdown-text el_nav-text hl_text-drops">
+                  <a href="micro-feature.html" class="dropdown-link"
+                    >マイクロ水力の特徴</a
+                  >
+                </li>
+                <li class="el_dropdown-text el_nav-text hl_text-drops">
+                  <a href="product.html" class="dropdown-link">取り扱い製品</a>
+                </li>
+                <li class="el_dropdown-text el_nav-text hl_text-drops">
+                  <a href="example.html" class="dropdown-link">納入事例</a>
+                </li>
+              </ul>
+            </li>
+            <li class="el_nav-item el_nav-text hl_text-drops">
+              <a href="contact.html">お問い合わせ</a>
+            </li>
+          </ul>
+          <!-- /.nav-list -->
+        </nav>
+        <!-- /.header_nav -->
+      </div>
+    </header>
 
     <main role="main">
       <div class="el_top-img hl_sec-drops">
@@ -134,6 +200,7 @@
       crossorigin="anonymous"
     ></script>
     <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
+
     <!-- BootstrapのJS読み込み -->
     <script
       src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"

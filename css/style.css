@@ -44,109 +44,196 @@ main {
 }
 /* /ベースグループend */
 
-/* レイアウトグループ */
-/* ヘッダー関連 */
-.ly_header {
-  width: 100%;
-  height: 80px;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  position: fixed;
-  top: 0;
+/* モバイル版
+----------------------------------------------------*/
+@media screen and (max-width: 700px) {
+  /* レイアウトグループ */
+  .ly_header {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    top: 0;
+    background-color: #fff;
+  }
+  /* レイアウトグループend */
+
+  /* モジュールグループ */
+  .bl_header-nav {
+    display: none;
+    height: inherit;
+    width: 100%;
+    color: #fff;
+    font-size: 1rem;
+  }
+
+  .el_header-logo {
+    max-width: 30%;
+    vertical-align: top;
+    background-color: #fff;
+    padding-top: 15px;
+  }
+
+  .el_btn-hm {
+    padding: 0;
+    outline: none;
+    border: none;
+    background: none;
+    color: #3a3a3a;
+  }
+
+  .el_btn-display {
+    position: absolute;
+    top: 10%;
+    right: 5%;
+    font-size: 2rem;
+  }
+
+  /* モジュールグループend */
+
+  /* ヘルパーグループ */
+  .hl_textPosi-c {
+    text-align: center;
+  }
+  /* ヘルパーグループend */
+
+  /* ユニークグループ */
+  .logo {
+    display: none;
+  }
+
+  .logo_s {
+    width: 50%;
+  }
+  /* ユニークグループend */
 }
+/* PC版
+---------------------------------------------------*/
+@media screen and (min-width: 700px) and (max-width: 1440px) {
+  /* レイアウトグループ */ /* ヘッダー関連 */
+  .ly_header {
+    width: 100%;
+    max-width: 1440px;
+    height: 80px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: fixed;
+    top: 0;
+  }
 
-/* /ヘッダー関連end */
-/* /レイアウトグループend */
+  /* /ヘッダー関連end */
+  /* /レイアウトグループend */
 
-/* モジュールグループ */
-.bl_header-nav {
-  height: inherit;
-  width: 100%;
-  color: #fff;
-  font-size: 1rem;
+  /* モジュールグループ */
+  .bl_header-nav {
+    height: inherit;
+    width: 100%;
+    color: #fff;
+    font-size: 1rem;
+  }
+
+  .bl_nav-list {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 15px;
+  }
+
+  .bl_list-dropdown {
+    display: none;
+    position: absolute;
+    margin-top: 20px;
+    margin-left: 10px;
+    border-radius: 5px;
+  }
+
+  .el_nav-item {
+    padding: 10px;
+  }
+
+  .el_dropdown-text {
+    text-align: left;
+    padding: 10px;
+  }
+
+  .el_bg-menu {
+    background-color: #1760a0;
+  }
+
+  .el_nav-text:hover {
+    background-color: rgba(230, 230, 230, 0.2);
+  }
+
+  .el_header-logo {
+    max-width: 30%;
+    height: inherit;
+    vertical-align: top;
+    background-color: #fff;
+    padding-top: 15px;
+  }
+
+  .el_top-img {
+    margin: 90px auto 0px;
+    width: 80%;
+  }
+
+  .el_top-img img {
+    width: 100%;
+  }
+
+  .el_btn-hm {
+    padding: 0;
+    outline: none;
+    border: none;
+    background: none;
+    color: #3a3a3a;
+  }
+
+  .el_btn-display {
+    clip: rect(0, 0, 0, 0);
+    overflow: hidden;
+    position: absolute;
+  }
+
+  /* /モジュールグループend */
+
+  /* ヘルパーグループ */
+  .hl_textPosi-c {
+    text-align: center;
+  }
+
+  .hl_point {
+    cursor: pointer;
+  }
+
+  .hl_index {
+    z-index: 10;
+  }
+
+  .hl_text-drops {
+    filter: drop-shadow(0px 4px 4px black);
+  }
+
+  .hl_sec-drops {
+    filter: drop-shadow(0px 2px 2px #979797);
+  }
+
+  .hl_text-w {
+    color: #fff;
+  }
+  /* /ヘルパーグループend */
+
+  /* ユニークグループ */
+  .logo {
+    width: 70%;
+  }
+
+  .logo_s {
+    display: none;
+  }
+  /* /ユニークグループend */
+
+  /* プログラムグループ */
+  /* /プログラムグループend */
 }
-
-.bl_nav-list {
-  display: flex;
-  justify-content: space-around;
-  padding-top: 15px;
-}
-
-.bl_list-dropdown {
-  display: none;
-  position: relative;
-  left: 10px;
-  border-radius: 5px;
-  margin-top: 20px;
-}
-
-.el_nav-item {
-  padding: 10px;
-}
-
-.el_dropdown-text {
-  text-align: left;
-  padding: 10px;
-}
-
-.el_bg-menu {
-  background-color: #1760a0;
-}
-
-.el_nav-text:hover {
-  background-color: rgba(230, 230, 230, 0.2);
-}
-
-.el_header-logo {
-  max-width: 350px;
-  height: inherit;
-  vertical-align: top;
-  background-color: #fff;
-  padding-top: 15px;
-}
-
-.el_top-img {
-  margin: 90px auto 0px;
-  width: 90%;
-}
-
-.el_top-img img {
-  width: 100%;
-}
-/* /モジュールグループend */
-
-/* ヘルパーグループ */
-.hl_textPosi-c {
-  text-align: center;
-}
-
-.hl_point {
-  cursor: pointer;
-}
-
-.hl_index {
-  z-index: 10;
-}
-
-.hl_text-drops {
-  filter: drop-shadow(0px 4px 4px black);
-}
-
-.hl_sec-drops {
-  filter: drop-shadow(0px 2px 2px #979797);
-}
-
-.hl_text-w {
-  color: #fff;
-}
-/* /ヘルパーグループend */
-
-/* ユニークグループ */
-.logo {
-  width: 70%;
-}
-/* /ユニークグループend */
-
-/* プログラムグループ */
-/* /プログラムグループend */
