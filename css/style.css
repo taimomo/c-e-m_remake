@@ -3,7 +3,8 @@
 
 /* ベースグループ */
 body {
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-family: "Hiragino Kaku Gothic ProN", "Arial Narrow", Arial, Helvetica,
+    sans-serif;
   line-height: 1.7;
 }
 
@@ -39,7 +40,7 @@ li {
 }
 
 main {
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
 }
 /* /ベースグループend */
@@ -48,6 +49,7 @@ main {
 ----------------------------------------------------*/
 @media screen and (max-width: 700px) {
   /* レイアウトグループ */
+
   .ly_header {
     display: flex;
     justify-content: center;
@@ -56,6 +58,17 @@ main {
     position: fixed;
     top: 0;
     background-color: #fff;
+  }
+
+  .ly_section {
+    text-align: center;
+    max-width: 85%;
+    margin: 0 auto;
+  }
+
+  .ly_contents {
+    display: flex;
+    flex-direction: column;
   }
   /* レイアウトグループend */
 
@@ -83,11 +96,85 @@ main {
     color: #3a3a3a;
   }
 
-  .el_btn-display {
+  .el_btn-hmDisplay {
     position: absolute;
     top: 10%;
     right: 5%;
     font-size: 2rem;
+  }
+
+  .el_top-img {
+    margin: 90px auto 50px;
+    width: 100%;
+  }
+
+  .el_top-img img {
+    width: 100%;
+  }
+
+  .bl_breadcrumb-trail {
+    display: none;
+  }
+
+  .bl_title {
+    margin-top: 1rem;
+  }
+
+  .el_title-text {
+    color: #3a3a3a;
+    border-bottom: double 4px #467d87;
+    display: inline-block;
+    padding: 0 10px;
+    font-size: 1.8rem;
+    font-style: italic;
+    font-weight: bold;
+  }
+
+  .bl_contents-item {
+    margin: 30px 0;
+  }
+
+  .el_note {
+    border: 2px dotted #3a3a3a;
+    padding: 1em;
+  }
+
+  .el_contents-img {
+    max-width: 100%;
+    object-fit: cover;
+  }
+
+  .el_contents-itemTitle {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    padding: 10px 0;
+  }
+
+  .el_contents-itemText {
+    font-size: 1rem;
+    text-align: left;
+  }
+
+  .el_contents-btn {
+    border: 2px solid #3a3a3a;
+    border-radius: 10px;
+    background-color: #fff;
+    margin: 10px 0;
+    padding: 5px 10px;
+  }
+
+  .el_contents-btn:hover {
+    background-color: #3a3a3a;
+    color: #fff;
+    opacity: 0.5;
+  }
+
+  .el_link-area {
+    padding: 20px;
+    background-color: aliceblue;
+    margin: 10px 10px;
+    text-align: center;
+    border: 1px solid #979797;
   }
 
   /* モジュールグループend */
@@ -96,6 +183,20 @@ main {
   .hl_textPosi-c {
     text-align: center;
   }
+
+  .hl_index {
+    z-index: 10;
+  }
+
+  .hl_sec-drops {
+    filter: drop-shadow(0px 2px 2px #979797);
+  }
+
+  .hl_title-textS {
+    font-size: 0.5em;
+    font-style: normal;
+  }
+
   /* ヘルパーグループend */
 
   /* ユニークグループ */
@@ -108,10 +209,14 @@ main {
   }
   /* ユニークグループend */
 }
+/* モバイル版end
+---------------------------------------------------- */
+
 /* PC版
 ---------------------------------------------------*/
 @media screen and (min-width: 700px) and (max-width: 1440px) {
   /* レイアウトグループ */ /* ヘッダー関連 */
+
   .ly_header {
     width: 100%;
     max-width: 1440px;
@@ -175,7 +280,7 @@ main {
 
   .el_top-img {
     margin: 90px auto 0px;
-    width: 80%;
+    width: 90%;
   }
 
   .el_top-img img {
@@ -190,7 +295,7 @@ main {
     color: #3a3a3a;
   }
 
-  .el_btn-display {
+  .el_btn-hmDisplay {
     clip: rect(0, 0, 0, 0);
     overflow: hidden;
     position: absolute;
