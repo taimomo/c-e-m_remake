@@ -16,3 +16,27 @@ $(document).ready(function () {
     }
   });
 });
+
+$(function () {
+  "use strict";
+  let topBtn = $(".el_top-btn");
+  topBtn.hide();
+  //スクロールが150に達したらボタン表示
+  $(window).scroll(function () {
+    if ($(this).scrollTop() > 150) {
+      topBtn.fadeIn();
+    } else {
+      topBtn.fadeOut();
+    }
+  });
+  //スクロールしてトップ
+  topBtn.click(function () {
+    $("body,html").animate(
+      {
+        scrollTop: 0,
+      },
+      500
+    );
+    return false;
+  });
+});

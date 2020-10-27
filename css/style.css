@@ -474,6 +474,27 @@ main {
     padding-right: 5%;
   }
 
+  .el_top-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 1rem;
+  }
+  .el_top-btn a {
+    background: #4699ca;
+    text-decoration: none;
+    color: #fff;
+    width: 100px;
+    padding: 15%;
+    text-align: center;
+    display: block;
+    border-radius: 50%;
+  }
+  .el_top-btn a:hover {
+    text-decoration: none;
+    opacity: 0.6;
+  }
+
   /* /モジュールグループend */
 
   /* ヘルパーグループ */
