@@ -70,6 +70,17 @@ main {
     display: flex;
     flex-direction: column;
   }
+
+  .ly_footer {
+    background-color: #000;
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+  }
+
+  .ly_footer p {
+    color: #fff;
+  }
   /* レイアウトグループend */
 
   /* モジュールグループ */
@@ -160,18 +171,23 @@ main {
     text-align: left;
   }
 
-  .el_contents-btn {
+  .el_btn {
     border: 2px solid #3a3a3a;
     border-radius: 10px;
     background-color: #fff;
-    margin: 10px 0;
+    margin-top: 10px;
     padding: 5px 10px;
   }
 
-  .el_contents-btn:hover {
+  .el_btn:hover {
     background-color: #3a3a3a;
     color: #fff;
     opacity: 0.5;
+  }
+
+  .el_movie iframe {
+    width: 100%;
+    height: 50vh;
   }
 
   .el_link-area {
@@ -180,6 +196,18 @@ main {
     margin: 10px 10px;
     text-align: center;
     border: 1px solid #979797;
+  }
+
+  .bl_footer-cem {
+    font-family: "ヒラギノ明朝 ProN", sans-serif;
+    font-size: 1.8em;
+  }
+
+  .el_footer-address {
+    display: inline-block;
+    margin: 20px;
+    text-align: left;
+    line-height: 2;
   }
 
   /* モジュールグループend */
@@ -219,7 +247,7 @@ main {
 
 /* PC版
 ---------------------------------------------------*/
-@media screen and (min-width: 700px) and (max-width: 1440px) {
+@media screen and (min-width: 700px) {
   /* レイアウトグループ */ /* ヘッダー関連 */
 
   .ly_header {
@@ -247,6 +275,17 @@ main {
   .ly_grid {
     display: grid;
     grid-template-columns: 2fr 1fr;
+  }
+
+  .ly_footer {
+    background-color: #000;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .ly_footer p {
+    color: #fff;
   }
 
   /* /ヘッダー関連end */
@@ -401,12 +440,38 @@ main {
     display: none;
   }
 
+  .el_movie iframe {
+    width: 100%;
+    height: 60vh;
+  }
+
   .el_link-area {
     padding: 20px;
     background-color: aliceblue;
     margin: 10px 10px;
     text-align: center;
     border: 1px solid #979797;
+  }
+
+  .bl_footer-cem {
+    font-family: "ヒラギノ明朝 ProN", sans-serif;
+    font-size: 1.8em;
+    margin: auto 2%;
+  }
+
+  .el_footer-address {
+    width: 500px;
+    margin: 5% 2% 5% 0;
+    line-height: 2;
+  }
+
+  .el_footer-address br {
+    display: none;
+  }
+
+  .el_footer-cp {
+    text-align: right;
+    padding-right: 5%;
   }
 
   /* /モジュールグループend */
