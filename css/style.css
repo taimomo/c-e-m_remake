@@ -636,7 +636,7 @@ main {
 
   .bl_media {
     display: flex;
-    margin: 40px 0;
+    margin: 60px 0;
   }
 
   .bl_media.bl_media-rev {
@@ -770,6 +770,11 @@ main {
 
   .hl_mr-third {
     margin: 0 30% 0 0;
+  }
+
+  .hl_link-posi {
+    margin-top: -60px;
+    padding-top: 60px;
   }
 
   /* /ヘルパーグループend */
