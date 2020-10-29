@@ -259,7 +259,7 @@ main {
 
   .bl_media {
     display: block;
-    margin: 30px 0;
+    margin: 40px 0;
   }
 
   .bl_media-imgWrapper {
@@ -498,6 +498,11 @@ main {
     text-align: left;
   }
 
+  .el_trail-link {
+    text-decoration: underline;
+    color: #3094ff;
+  }
+
   .bl_title {
     margin-top: 2rem;
   }
@@ -588,6 +593,102 @@ main {
     border: 1px solid #979797;
   }
 
+  .bl_faq > *:last-child {
+    margin-bottom: 0;
+  }
+
+  .bl_faq-q,
+  .bl_faq-a {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    box-sizing: content-box;
+  }
+
+  .bl_faq-q {
+    margin-top: 20px;
+    margin-right: 40px;
+    font-size: 1.1rem;
+    font-weight: bold;
+  }
+
+  .bl_faq-qTxt {
+    padding-top: 12px;
+  }
+
+  .bl_faq-a {
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+  }
+
+  .bl_faq-aBody {
+    padding-top: 12px;
+  }
+
+  .bl_faq-aBody > *:last-child {
+    margin-bottom: 0;
+  }
+
+  .bl_faq-aTxt {
+    margin-bottom: 20px;
+    text-align: left;
+  }
+
+  .bl_media {
+    display: flex;
+    margin: 40px 0;
+  }
+
+  .bl_media.bl_media-rev {
+    flex-direction: row-reverse;
+  }
+
+  .bl_media-imgWrapper {
+    flex: 0 1 27.58333%;
+    margin-right: 3.33333%;
+  }
+
+  .bl_media-imgWrapper > img {
+    max-height: 250px;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .bl_media-rev.bl_media-imgWrapper {
+    margin-right: 0;
+  }
+
+  .bl_media-body {
+    flex: 1;
+  }
+
+  .bl_media-body > *:last-child {
+    margin-bottom: 0;
+  }
+
+  .bl_media-rev.bl_media-body {
+    margin-right: 3.33333%;
+  }
+
+  .bl_media-title {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    display: inline-block;
+  }
+
+  .bl_media-txt {
+    text-align: left;
+  }
+
+  .bl_media-txt > span {
+    font-weight: bold;
+  }
+
+  .bl_media-rev.bl_media-txt {
+    margin-right: 20px;
+  }
+
   .el_top-btn {
     position: fixed;
     bottom: 20px;
@@ -661,6 +762,14 @@ main {
   .hl_title-textS {
     font-size: 0.5em;
     font-style: normal;
+  }
+
+  .hl_lineU {
+    border-bottom: solid 2px #467d87;
+  }
+
+  .hl_mr-third {
+    margin: 0 30% 0 0;
   }
 
   /* /ヘルパーグループend */
