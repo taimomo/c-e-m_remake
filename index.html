@@ -50,26 +50,27 @@
         <button type="button" class="el_btn-hm">
           <span class="el_btn-hmDisplay"><i class="fas fa-bars"></i></span>
         </button>
+
         <nav class="bl_header-nav el_bg-menu">
           <ul class="bl_nav-list">
-            <li class="el_nav-item el_nav-text hl_text-drops">
-              <a href="index.html">HOME</a>
-            </li>
+            <a href="index.html">
+              <li class="el_nav-item el_nav-text hl_text-drops">HOME</li>
+            </a>
             <li class="el_nav-text hl_point">
               <p class="el_nav-item hl_text-drops hl_text-w">
                 会社案内 <i class="fas fa-angle-down"></i>
               </p>
               <ul class="bl_list-dropdown el_bg-menu">
-                <li class="el_nav-text el_dropdown-text hl_text-drops">
-                  <a href="about.html#company" class="dropdown-link"
-                    >企業情報</a
-                  >
-                </li>
-                <li class="el_nav-text el_dropdown-text hl_text-drops">
-                  <a href="about.html#business" class="dropdown-link"
-                    >業務内容</a
-                  >
-                </li>
+                <a href="about.html#company" class="dropdown-link">
+                  <li class="el_nav-text el_dropdown-text hl_text-drops">
+                    企業情報
+                  </li>
+                </a>
+                <a href="about.html#business" class="dropdown-link">
+                  <li class="el_nav-text el_dropdown-text hl_text-drops">
+                    業務内容
+                  </li>
+                </a>
               </ul>
             </li>
             <li class="el_nav-text hl_point">
@@ -82,22 +83,28 @@
                     マイクロ水力発電とは？
                   </a>
                 </li>
-                <li class="el_dropdown-text el_nav-text hl_text-drops">
-                  <a href="micro-feature.html" class="dropdown-link"
-                    >マイクロ水力の特徴</a
-                  >
-                </li>
-                <li class="el_dropdown-text el_nav-text hl_text-drops">
-                  <a href="product.html" class="dropdown-link">取り扱い製品</a>
-                </li>
-                <li class="el_dropdown-text el_nav-text hl_text-drops">
-                  <a href="example.html" class="dropdown-link">納入事例</a>
-                </li>
+                <a href="micro-feature.html" class="dropdown-link">
+                  <li class="el_dropdown-text el_nav-text hl_text-drops">
+                    マイクロ水力の特徴
+                  </li>
+                </a>
+                <a href="product.html" class="dropdown-link">
+                  <li class="el_dropdown-text el_nav-text hl_text-drops">
+                    取り扱い製品
+                  </li>
+                </a>
+                <a href="example.html" class="dropdown-link">
+                  <li class="el_dropdown-text el_nav-text hl_text-drops">
+                    納入事例
+                  </li>
+                </a>
               </ul>
             </li>
-            <li class="el_nav-item el_nav-text hl_text-drops">
-              <a href="contact.html">お問い合わせ</a>
-            </li>
+            <a href="contact.html">
+              <li class="el_nav-item el_nav-text hl_text-drops">
+                お問い合わせ
+              </li>
+            </a>
           </ul>
           <!-- /.nav-list -->
         </nav>
@@ -191,12 +198,36 @@
             NEWS <span class="hl_title-textS">お知らせ</span>
           </h1>
         </div>
-        <div class="bl_contents-item el_note">
-          <p class="el_contents-itemText">
-            2020.6.30<br />
-            サイトをリニューアルしました。
-          </p>
-        </div>
+        <ul class="bl_contents-item bl_vert-posts">
+          <li class="bl_vert-postsItem">
+            <div class="bl_vert-postsHeader">
+              <time
+                class="bl_vert-postsDate el_contents-itemText"
+                datetime="2020-06-30"
+              >
+                2020-06-30
+              </time>
+            </div>
+            <!-- /.bl_vert-postsHeader -->
+            <p class="el_vert-postsText el contents-itemText">
+              サイトをリニューアルしました。
+            </p>
+          </li>
+          <li class="bl_vert-postsItem">
+            <div class="bl_vert-postsHeader">
+              <time
+                class="bl_vert-postsDate el_contents-itemText"
+                datetime="2020-06-30"
+              >
+                2020-06-30
+              </time>
+            </div>
+            <!-- /.bl_vert-postsHeader -->
+            <p class="el_vert-postsText el contents-itemText">
+              サイトをリニューアルしました。
+            </p>
+          </li>
+        </ul>
       </section>
       <!-- ./news end -->
 
