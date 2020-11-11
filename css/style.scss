@@ -431,6 +431,7 @@ footer {
 
 .bl_media {
   display: flex;
+  justify-content: space-between;
   margin: 60px 0;
 
   // &があるとセレクタ間のスペースが作られない。両方のセレクタを持つ要素が対象になる
@@ -445,8 +446,8 @@ footer {
 }
 
 .bl_media-imgWrapper {
-  flex: 0 1 27.58333%;
-  margin-right: 3.33333%;
+  flex: 0.5 1 27.58333%;
+  margin-right: 30px;
 
   >img {
     max-height: 80vh;
@@ -465,19 +466,43 @@ footer {
       bottom: 20px;
       top: 20px
     }
-
-    .el_picto {
-      width: 15%;
-      margin-top: 60px;
-    }
   }
 }
 
 .bl_media-body {
-  flex: 1;
-
   >*:last-child {
     margin-bottom: 0;
+  }
+}
+
+.bl_media-bodyG {
+  @media screen and (min-width:769px) {
+    display: grid;
+    grid-template-columns: 50% 50%;
+
+    .el_grid-A {
+      order: 1;
+    }
+
+    .el_grid-B {
+      order: 2;
+      grid-row: span 2;
+      text-align: center;
+      margin-left: 120px;
+    }
+
+    .el_grid-C {
+      order: 3;
+    }
+  }
+}
+
+.bl_media-body40 {
+  min-width: 40%;
+  margin-left: 5%;
+
+  @include mq(md) {
+    margin-left: 0;
   }
 }
 
@@ -499,6 +524,7 @@ footer {
 
 .bl_media-txt {
   text-align: left;
+  margin-top: 30px;
 
   >span {
     font-weight: bold;
@@ -508,15 +534,17 @@ footer {
 .bl_media-rev {
   .bl_media-txt {
     margin-right: 20px;
+
+    @include mq(md) {
+      margin-right: 0;
+    }
   }
 }
-
-
 
 .bl_media-gridWrapper {
   display: grid;
   justify-items: center;
-  margin-bottom: 20px;
+  margin: 20px 0;
 
   grid: {
     template-columns: repeat(auto-fit, minmax(150px, 1fr));
@@ -524,12 +552,30 @@ footer {
   }
 }
 
+.bl_balloon-imgWrapper {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.el_picto {
+  width: 15%;
+  max-height: 30vh;
+  margin-top: 60px;
+}
+
+
 .bl_balloon-think {
   position: relative;
   padding: 15px;
   background: $white_color;
   border: 1px solid $txt_color;
   border-radius: 50%;
+  text-align: center;
+
+  font: {
+    size: 1.5rem;
+    weight: bold;
+  }
 
   &:before {
     content: "";
@@ -545,7 +591,7 @@ footer {
   &:after {
     content: "";
     position: absolute;
-    left: 110px;
+    left: 80px;
     width: 13px;
     height: 12px;
     bottom: -50px;
@@ -560,21 +606,21 @@ footer {
 
   @include mq(md) {
     &:before {
-      left: 150px;
+      left: 100px;
     }
 
     &:after {
-      left: 170px;
+      left: 120px;
     }
   }
 
   @include mq(sm) {
     &:before {
-      left: 90px;
+      left: 50px;
     }
 
     &:after {
-      left: 110px;
+      left: 60px;
     }
   }
 }
@@ -614,7 +660,10 @@ footer {
     padding: 15px;
     font-weight: bold;
     vertical-align: middle;
-    white-space: nowrap;
+
+    @include mq(md) {
+      white-space: nowrap;
+    }
 
     border: {
       right: 1px solid $txt_color;
@@ -629,7 +678,10 @@ footer {
   td {
     padding: 15px;
     vertical-align: middle;
-    white-space: nowrap;
+
+    @include mq(md) {
+      white-space: nowrap;
+    }
 
     border: {
       right: 1px solid $txt_color;
@@ -789,6 +841,27 @@ footer {
 .hl_link-posi {
   margin-top: -60px;
   padding-top: 60px;
+}
+
+.hl_dis-noneL {
+  display: none;
+
+  @include mq(md) {
+    display: inline-block;
+  }
+}
+
+.hl_dis-noneM {
+  display: inline-block;
+
+  @include mq(md) {
+    display: none;
+  }
+}
+
+.hl_txt-str {
+  display: block;
+  font-size: 1.5rem;
 }
 
 /* /ヘルパーグループend */
