@@ -460,6 +460,9 @@ footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin: 60px 0;
 }
 
@@ -478,10 +481,10 @@ footer {
 }
 
 .bl_media-imgWrapper {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 1 27.58333%;
-          flex: 0 1 27.58333%;
-  margin-right: 3.33333%;
+  -webkit-box-flex: 0.5;
+      -ms-flex: 0.5 1 27.58333%;
+          flex: 0.5 1 27.58333%;
+  margin-right: 30px;
 }
 
 .bl_media-imgWrapper > img {
@@ -501,20 +504,48 @@ footer {
     margin-bottom: 20px;
     margin-top: 20px;
   }
-  .bl_media-imgWrapper .el_picto {
-    width: 15%;
-    margin-top: 60px;
-  }
-}
-
-.bl_media-body {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
 }
 
 .bl_media-body > *:last-child {
   margin-bottom: 0;
+}
+
+@media screen and (min-width: 769px) {
+  .bl_media-bodyG {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 50% 50%;
+        grid-template-columns: 50% 50%;
+  }
+  .bl_media-bodyG .el_grid-A {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .bl_media-bodyG .el_grid-B {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    grid-row: span 2;
+    text-align: center;
+    margin-left: 120px;
+  }
+  .bl_media-bodyG .el_grid-C {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+  }
+}
+
+.bl_media-body40 {
+  min-width: 40%;
+  margin-left: 5%;
+}
+
+@media (max-width: 768px) {
+  .bl_media-body40 {
+    margin-left: 0;
+  }
 }
 
 .bl_media-rev .bl_media-body {
@@ -530,6 +561,7 @@ footer {
 
 .bl_media-txt {
   text-align: left;
+  margin-top: 30px;
 }
 
 .bl_media-txt > span {
@@ -540,14 +572,31 @@ footer {
   margin-right: 20px;
 }
 
+@media (max-width: 768px) {
+  .bl_media-rev .bl_media-txt {
+    margin-right: 0;
+  }
+}
+
 .bl_media-gridWrapper {
   display: -ms-grid;
   display: grid;
   justify-items: center;
-  margin-bottom: 20px;
+  margin: 20px 0;
   -ms-grid-columns: (minmax(150px, 1fr))[auto-fit];
       grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   grid-gap: 10px;
+}
+
+.bl_balloon-imgWrapper {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.el_picto {
+  width: 15%;
+  max-height: 30vh;
+  margin-top: 60px;
 }
 
 .bl_balloon-think {
@@ -556,6 +605,9 @@ footer {
   background: #fff;
   border: 1px solid #3a3a3a;
   border-radius: 50%;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
 }
 
 .bl_balloon-think:before {
@@ -572,7 +624,7 @@ footer {
 .bl_balloon-think:after {
   content: "";
   position: absolute;
-  left: 110px;
+  left: 80px;
   width: 13px;
   height: 12px;
   bottom: -50px;
@@ -587,19 +639,19 @@ footer {
 
 @media (max-width: 768px) {
   .bl_balloon-think:before {
-    left: 150px;
+    left: 100px;
   }
   .bl_balloon-think:after {
-    left: 170px;
+    left: 120px;
   }
 }
 
 @media (max-width: 426px) {
   .bl_balloon-think:before {
-    left: 90px;
+    left: 50px;
   }
   .bl_balloon-think:after {
-    left: 110px;
+    left: 60px;
   }
 }
 
@@ -639,9 +691,14 @@ footer {
   padding: 15px;
   font-weight: bold;
   vertical-align: middle;
-  white-space: nowrap;
   border-right: 1px solid #3a3a3a;
   border-bottom: 1px solid #3a3a3a;
+}
+
+@media (max-width: 768px) {
+  .bl_vert-table th {
+    white-space: nowrap;
+  }
 }
 
 .bl_vert-table th:last-child {
@@ -651,9 +708,14 @@ footer {
 .bl_vert-table td {
   padding: 15px;
   vertical-align: middle;
-  white-space: nowrap;
   border-right: 1px solid #3a3a3a;
   border-bottom: 1px solid #3a3a3a;
+}
+
+@media (max-width: 768px) {
+  .bl_vert-table td {
+    white-space: nowrap;
+  }
 }
 
 .bl_vert-table td:last-child {
@@ -803,6 +865,31 @@ footer {
 .hl_link-posi {
   margin-top: -60px;
   padding-top: 60px;
+}
+
+.hl_dis-noneL {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .hl_dis-noneL {
+    display: inline-block;
+  }
+}
+
+.hl_dis-noneM {
+  display: inline-block;
+}
+
+@media (max-width: 768px) {
+  .hl_dis-noneM {
+    display: none;
+  }
+}
+
+.hl_txt-str {
+  display: block;
+  font-size: 1.5rem;
 }
 
 /* /ヘルパーグループend */
