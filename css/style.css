@@ -410,6 +410,10 @@ footer {
   font-size: 1rem;
 }
 
+.el_movie {
+  width: 100%;
+}
+
 .el_movie iframe {
   width: 100%;
   height: 60vh;
@@ -520,6 +524,12 @@ footer {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .bl_media-imgWrapper .bl_img {
+    width: 40%;
+  }
 }
 
 .bl_media-imgWrapper .el_img-large {
@@ -839,6 +849,16 @@ footer {
   }
 }
 
+.el_img-mq {
+  min-width: 60%;
+}
+
+@media (max-width: 768px) {
+  .el_img-mq {
+    width: 100%;
+  }
+}
+
 .el_top-btn {
   display: block;
   position: fixed;
@@ -956,6 +976,12 @@ footer {
 
 .hl_mr-right30 {
   margin-right: 30%;
+}
+
+@media (max-width: 768px) {
+  .hl_mr-right30 {
+    margin-right: 0;
+  }
 }
 
 .hl_mr-top30 {
