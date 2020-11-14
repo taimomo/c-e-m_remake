@@ -95,7 +95,7 @@ footer {
   margin: 0 auto;
 
   @include mq(md) {
-    max-width: 85%;
+    max-width: 70vw;
     text-align: center;
   }
 }
@@ -103,6 +103,7 @@ footer {
 .ly_contents {
   display: flex;
   justify-content: space-evenly;
+  margin: 30px 0;
 
   @include mq(md) {
     flex-direction: column;
@@ -295,18 +296,32 @@ footer {
 }
 
 .bl_contents-item {
-  padding: 5% 5% 5% 0;
+  width: 40%;
+  margin-right: 8%;
+
+  &:last-child {
+    margin-right: 0;
+  }
 
   @include mq(md) {
+    width: 100%;
     margin: 30px 0;
   }
 }
 
 .el_contents-menu {
   width: 35%;
+  padding-right: 50px;
+  border-right: 1px solid $under_color;
+
+  &:last-child {
+    border: none;
+  }
 
   @include mq(md) {
     width: 100%;
+    padding-right: 0;
+    border: none;
   }
 }
 
@@ -341,6 +356,10 @@ footer {
   }
 }
 
+.bl_content-posts {
+  margin-top: 30px;
+}
+
 .bl_vert-posts {
   padding: 1em;
 }
@@ -363,6 +382,8 @@ footer {
 }
 
 .el_movie {
+  width: 100%;
+
   iframe {
     width: 100%;
     height: 60vh;
@@ -370,6 +391,12 @@ footer {
 
   @include mq(md) {
     height: 50vh;
+  }
+}
+
+.bl_link {
+  @include mq(md) {
+    margin-top: 60px;
   }
 }
 
@@ -382,6 +409,8 @@ footer {
 }
 
 .bl_faq {
+  margin-top: 50px;
+
   >*:last-child {
     margin-bottom: 0;
   }
@@ -432,7 +461,7 @@ footer {
 .bl_media {
   display: flex;
   justify-content: space-between;
-  margin: 60px 0;
+  margin: 60px 0 0 0;
 
   // &があるとセレクタ間のスペースが作られない。両方のセレクタを持つ要素が対象になる
   &.bl_media-rev {
@@ -441,7 +470,6 @@ footer {
 
   @include mq(md) {
     display: block;
-    margin: 40px 0;
   }
 }
 
@@ -453,6 +481,20 @@ footer {
     max-height: 80vh;
     width: 100%;
     object-fit: cover;
+  }
+
+  .bl_img {
+    @include mq(md) {
+      width: 40%;
+    }
+  }
+
+  .el_img-large {
+    width: auto;
+
+    @include mq(md) {
+      width: 80%;
+    }
   }
 
   // &がないとセレクタ間のスペースが作られる。子孫セレクタになるので親要素内の子孫が対象
@@ -488,11 +530,18 @@ footer {
       order: 2;
       grid-row: span 2;
       text-align: center;
-      margin-left: 120px;
     }
 
     .el_grid-C {
       order: 3;
+    }
+
+    .el_grid-D {
+      order: 4;
+    }
+
+    .el_grid-E {
+      order: 5;
     }
   }
 }
@@ -558,11 +607,9 @@ footer {
 }
 
 .el_picto {
-  width: 15%;
   max-height: 30vh;
   margin-top: 60px;
 }
-
 
 .bl_balloon-think {
   position: relative;
@@ -577,7 +624,7 @@ footer {
     weight: bold;
   }
 
-  &:before {
+  &::before {
     content: "";
     position: absolute;
     left: 100px;
@@ -588,7 +635,7 @@ footer {
     border-radius: 50%;
   }
 
-  &:after {
+  &::after {
     content: "";
     position: absolute;
     left: 80px;
@@ -605,23 +652,42 @@ footer {
   }
 
   @include mq(md) {
-    &:before {
+    &::before {
       left: 100px;
     }
 
-    &:after {
+    &::after {
       left: 120px;
     }
   }
 
   @include mq(sm) {
-    &:before {
+    &::before {
       left: 50px;
     }
 
-    &:after {
+    &::after {
       left: 60px;
     }
+  }
+}
+
+.bl_balloon-check {
+  position: relative;
+  padding: 20px;
+  margin-left: 16%;
+  width: 70%;
+  border: 1px solid $txt_color;
+  border-radius: 50%;
+  text-align: center;
+  color: $txt_color;
+  letter-spacing: 0.2em;
+  font-size: 1.5rem;
+
+  @include mq(md) {
+    width: 100%;
+    margin-left: 0;
+    font-size: 1.2rem;
   }
 }
 
@@ -636,6 +702,18 @@ footer {
     color: $white_color;
     font-size: 1rem;
     padding: 10px 10px 0 10px;
+  }
+}
+
+.el_balloon-itemBAD {
+  border: 1px dotted $txt_color;
+  border-radius: 30px;
+  min-width: 150px;
+
+  p {
+    color: $txt_color;
+    padding: 10px;
+    font-size: 1rem;
   }
 }
 
@@ -698,6 +776,7 @@ footer {
   text-align: left;
   background-color: #efefef;
   padding: 20px;
+  margin-top: 10px;
 
   >*:last-child {
     margin-bottom: 0;
@@ -708,6 +787,31 @@ footer {
     padding-left: 1em;
     margin-bottom: 10px;
     border-bottom: 1px dotted $txt_color;
+  }
+}
+
+.bl_number-img {
+  height: 100%;
+  object-fit: cover;
+}
+
+.bl_btn-dis {
+  text-align: right;
+
+  >a {
+    display: inline-block;
+  }
+
+  @include mq(md) {
+    text-align: center;
+  }
+}
+
+.el_img-mq {
+  min-width: 60%;
+
+  @include mq(md) {
+    width: 100%;
   }
 }
 
@@ -832,15 +936,43 @@ footer {
 
 .hl_mr-right30 {
   margin-right: 30%;
+
+  @include mq(md) {
+    margin-right: 0;
+  }
 }
 
 .hl_mr-top30 {
   margin-top: 30px;
 }
 
+.hl_mr-left120 {
+  @include mq(lg) {
+    margin-left: 120px;
+  }
+}
+
+.hl_mr-rightReset {
+  @include mq(md) {
+    margin-right: 0;
+  }
+}
+
 .hl_link-posi {
   margin-top: -60px;
   padding-top: 60px;
+}
+
+.hl_md-posiC {
+  @include mq(md) {
+    text-align: center;
+  }
+}
+
+.hl_md-txtMrT__sizeS {
+  @include mq(md) {
+    margin-top: 5px;
+  }
 }
 
 .hl_dis-noneL {
