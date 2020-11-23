@@ -56,6 +56,12 @@ a {
   }
 }
 
+button {
+  &:focus {
+    outline: none;
+  }
+}
+
 li {
   list-style: none;
 }
@@ -63,6 +69,16 @@ li {
 main {
   width: 90%;
   margin: 0 auto;
+
+  @include mq(md) {
+    width: 100%;
+  }
+}
+
+header {
+  @include mq(md) {
+    position: relative;
+  }
 }
 
 footer {
@@ -201,6 +217,110 @@ footer {
   padding-top: 15px;
 }
 
+.el_over-logo {
+  margin-top: 50px;
+
+  img {
+    display: inline-block;
+    width: 50vw;
+
+    @include mq(sm) {
+      width: 70vw;
+    }
+  }
+}
+
+.el_btn-nav {
+  padding: 0;
+  outline: none;
+  border: none;
+  background: none;
+  color: $txt_color;
+
+  @include mq(md) {
+    position: fixed;
+    top: 6px;
+    right: 20px;
+    z-index: 999;
+    display: inline;
+    font-size: 2rem;
+  }
+}
+
+.el_btn-hm {
+  display: none;
+
+  @include mq(md) {
+    display: inline-block;
+    text-decoration: none;
+
+    &:hover,
+    &:focus {
+      color: rgba(0, 0, 0, 0.3);
+      outline: none;
+    }
+  }
+}
+
+.bl_overlay {
+  position: fixed;
+  top: 0;
+  z-index: 99;
+  display: none;
+  width: 100%;
+  height: 100vh;
+  overflow: auto;
+  background: $white_color;
+  text-align: center;
+
+  font: {
+    size: 1.5em;
+    weight: bold;
+  }
+
+  @include mq(sm) {
+    font: {
+      size: 1.2em;
+      weight: normal;
+    }
+  }
+}
+
+.bl_over-nav {
+  color: $txt_color;
+  display: block;
+  width: 80%;
+  margin: 20% auto;
+}
+
+.bl_over-navList {
+  text-align: left;
+}
+
+.bl_over-navTxt {
+  display: table;
+  width: 100%;
+  padding: 30px 20px;
+
+  border: {
+    bottom: 1px dotted $txt_color;
+  }
+
+  p {
+    display: table-cell;
+    text-align: left;
+  }
+
+  i {
+    display: table-cell;
+    text-align: right;
+  }
+}
+
+.bl_over-acc {
+  display: none;
+}
+
 .el_top-img {
   margin: 90px auto 20px;
   width: 75%;
@@ -212,27 +332,6 @@ footer {
   @include mq(md) {
     margin: 90px auto 50px;
     width: 100%;
-  }
-}
-
-.el_btn-hm {
-  padding: 0;
-  outline: none;
-  border: none;
-  background: none;
-  color: $txt_color;
-}
-
-.el_btn-hmDisplay {
-  display: none;
-  overflow: hidden;
-
-  @include mq(md) {
-    display: inline;
-    position: absolute;
-    top: 10%;
-    right: 5%;
-    font-size: 2rem;
   }
 }
 
@@ -474,12 +573,12 @@ footer {
 }
 
 .bl_media-imgWrapper {
-  flex: 0.5 1 27.58333%;
+  // flex: 0.5 1 27.58333%;
   margin-right: 30px;
 
   >img {
-    max-height: 80vh;
-    width: 100%;
+    max-height: 50vh;
+    width: 300px;
     object-fit: cover;
   }
 
@@ -947,8 +1046,10 @@ footer {
 }
 
 .hl_mr-left120 {
-  @include mq(lg) {
-    margin-left: 120px;
+  margin-left: 120px;
+
+  @include mq(md) {
+    margin-left: 0;
   }
 }
 
@@ -956,6 +1057,10 @@ footer {
   @include mq(md) {
     margin-right: 0;
   }
+}
+
+.hl_pd-leftReset {
+  padding-left: 0;
 }
 
 .hl_link-posi {
@@ -994,6 +1099,10 @@ footer {
 .hl_txt-str {
   display: block;
   font-size: 1.5rem;
+}
+
+.hl_mr-0auto {
+  margin: 0 auto;
 }
 
 /* /ヘルパーグループend */
