@@ -671,7 +671,6 @@ footer {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  margin: 60px 0 0 0;
 }
 
 @media (max-width: 768px) {
@@ -1379,6 +1378,10 @@ footer {
   text-align: left;
 }
 
+.hl_text-posiR {
+  text-align: right;
+}
+
 .hl_point {
   cursor: pointer;
 }
@@ -1435,6 +1438,16 @@ footer {
 
 @media (max-width: 768px) {
   .hl_mr-left120 {
+    margin-left: 0;
+  }
+}
+
+.hl_mr-left5p {
+  margin-left: 5%;
+}
+
+@media (max-width: 768px) {
+  .hl_mr-left5p {
     margin-left: 0;
   }
 }

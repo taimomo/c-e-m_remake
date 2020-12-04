@@ -629,7 +629,6 @@ footer {
 .bl_media-flEven {
   display: flex;
   justify-content: space-evenly;
-  margin: 60px 0 0 0;
 
   @include mq(md) {
     display: block;
@@ -1295,6 +1294,10 @@ footer {
   text-align: left;
 }
 
+.hl_text-posiR {
+  text-align: right;
+}
+
 .hl_point {
   cursor: pointer;
 }
@@ -1348,6 +1351,14 @@ footer {
 
 .hl_mr-left120 {
   margin-left: 120px;
+
+  @include mq(md) {
+    margin-left: 0;
+  }
+}
+
+.hl_mr-left5p {
+  margin-left: 5%;
 
   @include mq(md) {
     margin-left: 0;
