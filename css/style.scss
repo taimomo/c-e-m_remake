@@ -505,7 +505,7 @@ footer {
   }
 
   @include mq(md) {
-    height: 50vh;
+    height: 60vh;
   }
 }
 
@@ -705,7 +705,7 @@ footer {
 }
 
 .bl_media-title {
-  // display: inline-block;
+  display: inline-block;
   margin-bottom: 10px;
   padding-top: 10px;
 
@@ -930,6 +930,26 @@ footer {
   }
 }
 
+.bl_media-gridWrapper4 {
+  display: grid;
+  justify-items: center;
+  margin: 20px 0;
+
+  grid: {
+    template-columns: repeat(4, 1fr);
+    column-gap: 20px;
+    row-gap: 20px;
+  }
+
+  @include mq(md) {
+    display: flex;
+    flex-direction: column;
+    margin: 20px auto;
+    width: 50vw;
+    text-align: center;
+  }
+}
+
 .bl_balloon-imgWrapper {
   width: 80%;
   margin: 0 auto;
@@ -1042,7 +1062,9 @@ footer {
 .el_balloon-itemBAD {
   border: 1px dotted $txt_color;
   border-radius: 30px;
+  width: 90%;
   min-width: 150px;
+  text-align: center;
 
   p {
     color: $txt_color;
