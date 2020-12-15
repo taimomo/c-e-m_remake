@@ -866,7 +866,6 @@ footer {
 
   grid: {
     template-columns: repeat(6, 1fr);
-    // template-rows: repeat(2, 1fr);
     column-gap: 50px;
     row-gap: 50px;
   }
@@ -905,28 +904,6 @@ footer {
       row: 2;
     }
   }
-
-  .el_contents-imgArea {
-    width: 100%;
-    height: 35vh;
-
-    @include mq(md) {
-      height: auto;
-    }
-  }
-
-  .bl_grid-img {
-    width: 100%;
-    height: 100%;
-  }
-
-  @include mq(md) {
-    display: flex;
-    flex-direction: column;
-    margin: 0 auto;
-    width: 50vw;
-    text-align: center;
-  }
 }
 
 .bl_media-gridWrapper4 {
@@ -945,6 +922,63 @@ footer {
     flex-direction: column;
     margin: 20px auto;
     width: 50vw;
+    text-align: center;
+  }
+}
+
+.el_btn-grid {
+  border: 1px solid $under_color;
+  border-radius: 10rem;
+  background: $link_color;
+  text-align: center;
+  padding: 10px;
+  color: $white_color;
+  width: 28vw;
+
+  font: {
+    size: 1.2rem;
+    weight: bold;
+  }
+
+  @include mq(md) {
+    width: 60vw;
+  }
+}
+
+.bl_media-gridWrapper5 {
+  display: grid;
+  justify-items: center;
+  margin: 20px 0;
+
+  grid: {
+    template-columns: repeat(3, 1fr);
+    column-gap: 20px;
+    row-gap: 20px;
+  }
+
+  .el_grid-gA {
+    grid: {
+      column: 1 / 2;
+    }
+  }
+
+  .el_grid-gB {
+    grid: {
+      column: 2 / 3;
+    }
+  }
+
+  .el_grid-gC {
+    grid: {
+      column: 3 / 4;
+    }
+  }
+
+  @include mq(md) {
+    display: flex;
+    flex-direction: column;
+    margin: 20px auto;
+    width: 60vw;
     text-align: center;
   }
 }
@@ -1072,6 +1106,26 @@ footer {
   }
 }
 
+.el_squear-item {
+  height: 100%;
+
+  a {
+    color: $white_color;
+    display: inline-block;
+    vertical-align: middle;
+
+    font: {
+      size: 1rem;
+      weight: bold;
+    }
+  }
+
+  @include mq(md) {
+    width: auto;
+    margin-bottom: 10px;
+  }
+}
+
 .bl_vert-table {
   border: 1px solid $txt_color;
   border-right-width: 0;
@@ -1128,6 +1182,7 @@ footer {
 }
 
 .bl_horizTable {
+  width: 100%;
   margin: 30px auto;
   border: 1px soild $txt_color;
 
@@ -1211,6 +1266,52 @@ footer {
 
   @include mq(md) {
     width: 100%;
+  }
+}
+
+.bl_media-imgArea {
+  max-width: 50%;
+  margin-right: 10px;
+}
+
+.bl_media-imgMain {
+  margin: 30px 0 0 0 !important;
+
+  img {
+    display: block;
+    width: 400px !important;
+    height: 300px !important;
+    margin: 0 auto;
+    object-fit: cover;
+    object-position: top;
+  }
+}
+
+.bl_change-img {
+  display: flex;
+  height: 200px;
+  align-items: center;
+}
+
+.bl_chimg-item {
+  position: relative;
+  overflow: hidden;
+  margin-right: 10px;
+  width: 90px;
+  height: 90px;
+
+  img {
+    // position: absolute;
+    // top: 50%;
+    // left: 50%;
+    // transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  &:last-child {
+    margin-right: 0;
   }
 }
 
@@ -1421,6 +1522,14 @@ footer {
   margin: 0 auto;
 }
 
+.hl_mdwd-deliTable {
+  width: 35vw;
+
+  @include mq(md) {
+    width: 100%;
+  }
+}
+
 /* /ヘルパーグループend */
 
 /* ユニークグループ */
@@ -1447,6 +1556,12 @@ footer {
   @include mq(md) {
     font-size: 0.8rem;
   }
+}
+
+.current {
+  width: 120px;
+  height: 120px;
+  border: 2px solid $link_color;
 }
 
 /* /ユニークグループend */
