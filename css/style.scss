@@ -1272,6 +1272,11 @@ footer {
 .bl_media-imgArea {
   max-width: 50%;
   margin-right: 10px;
+
+  @include mq(md) {
+    max-width: 100%;
+    margin-right: 0;
+  }
 }
 
 .bl_media-imgMain {
@@ -1280,10 +1285,19 @@ footer {
   img {
     display: block;
     width: 400px !important;
-    height: 300px !important;
+    max-height: 480px !important;
     margin: 0 auto;
-    object-fit: cover;
+    object-fit: contain !important;
     object-position: top;
+
+    @include mq(md) {
+      width: 70vw !important;
+      max-height: 450px !important;
+    }
+
+    @include mq(sm) {
+      max-height: 300px !important;
+    }
   }
 }
 
@@ -1291,6 +1305,12 @@ footer {
   display: flex;
   height: 200px;
   align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+
+  @include mq(md) {
+    height: auto;
+  }
 }
 
 .bl_chimg-item {
@@ -1301,10 +1321,6 @@ footer {
   height: 90px;
 
   img {
-    // position: absolute;
-    // top: 50%;
-    // left: 50%;
-    // transform: translate(-50%, -50%);
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -1312,6 +1328,15 @@ footer {
 
   &:last-child {
     margin-right: 0;
+  }
+
+  @include mq(md) {
+    width: 15vw;
+    height: 15vh;
+  }
+
+  @include mq(sm) {
+    height: 8vh;
   }
 }
 
@@ -1562,6 +1587,16 @@ footer {
   width: 120px;
   height: 120px;
   border: 2px solid $link_color;
+
+  @include mq(md) {
+    width: 25vw;
+    height: 25vh;
+  }
+
+  @include mq(sm) {
+    width: 20vw;
+    height: 14vh;
+  }
 }
 
 /* /ユニークグループend */
