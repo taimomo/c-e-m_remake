@@ -927,6 +927,28 @@ footer {
       row: 2;
     }
   }
+
+  .el_contents-imgArea {
+    width: 100%;
+    height: 35vh;
+
+    @include mq(md) {
+      height: auto;
+    }
+  }
+
+  .bl_grid-img {
+    width: 100%;
+    height: 100%;
+  }
+
+  @include mq(md) {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 50vw;
+    text-align: center;
+  }
 }
 
 .bl_media-gridWrapper4 {
