@@ -619,6 +619,11 @@ footer {
     max-height: 50vh;
     width: 300px;
     object-fit: cover;
+
+    @include mq(md) {
+      width: 100%;
+      height: auto;
+    }
   }
 
   .bl_img {
