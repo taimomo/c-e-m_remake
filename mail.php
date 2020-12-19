@@ -291,135 +291,11 @@ if (($confirmDsp == 0 || $sendmail == 1) && $empty_flag != 1) {
       </div>
 
       <nav class="bl_header-nav el_bg-menu">
-        <ul class="bl_nav-list">
-          <a href="index.html">
-            <li class="el_nav-item el_nav-text hl_text-drops">HOME</li>
-          </a>
-          <li class="el_nav-text hl_point">
-            <p class="el_nav-item hl_text-drops hl_text-w">
-              会社案内 <i class="fas fa-angle-down"></i>
-            </p>
-            <ul class="bl_list-dropdown el_bg-menu">
-              <a href="about.html#company" class="dropdown-link">
-                <li class="el_nav-text el_dropdown-text hl_text-drops">企業情報</li>
-              </a>
-              <a href="about.html#business" class="dropdown-link">
-                <li class="el_nav-text el_dropdown-text hl_text-drops">業務内容</li>
-              </a>
-            </ul>
-          </li>
-          <li class="el_nav-text hl_point">
-            <p class="el_nav-item hl_text-drops hl_text-w">
-              マイクロ水力発電 <i class="fas fa-angle-down"></i>
-            </p>
-            <ul class="bl_list-dropdown el_bg-menu">
-              <li class="el_dropdown-text el_nav-text hl_text-drops">
-                <a href="micro-hydro.html" class="dropdown-link">
-                  マイクロ水力発電とは？
-                </a>
-              </li>
-              <a href="micro-feature.html" class="dropdown-link">
-                <li class="el_dropdown-text el_nav-text hl_text-drops">
-                  マイクロ水力の特徴
-                </li>
-              </a>
-              <a href="product.html" class="dropdown-link">
-                <li class="el_dropdown-text el_nav-text hl_text-drops">
-                  取り扱い製品
-                </li>
-              </a>
-              <a href="delivery_record.html" class="dropdown-link">
-                <li class="el_dropdown-text el_nav-text hl_text-drops">納入事例</li>
-              </a>
-            </ul>
-          </li>
-          <a href="contact.html">
-            <li class="el_nav-item el_nav-text hl_text-drops">お問い合わせ</li>
-          </a>
-        </ul>
       </nav>
     </div>
   </header>
 
   <main role="main">
-    <div class="overlay">
-      <button type="button" class="el_btn-nav">
-        <a class="el_btn-hm">
-          <i class="fas fa-bars"></i>
-        </a>
-      </button>
-
-      <div class="bl_overlay">
-        <nav class="bl_over-nav">
-          <ul class="bl_over-navList">
-            <a href="index.html">
-              <li class="bl_over-navTxt hl_pd-leftReset">
-                <p class="">HOME</p>
-                <i class="fas fa-angle-right"></i>
-              </li>
-            </a>
-            <li class="bl_over-navItem">
-              <p class="bl_over-navTxt hl_pd-leftReset">
-                会社案内<i class="fas fa-plus el_icon-toggle"></i>
-              </p>
-              <ul class="bl_over-acc">
-                <a href="about.html#company" class="el_acc-link">
-                  <li class="bl_acc-txt bl_over-navTxt">
-                    企業情報 <i class="fas fa-angle-right"></i>
-                  </li>
-                </a>
-                <a href="about.html#business" class="el_acc-link">
-                  <li class="bl_acc-txt bl_over-navTxt">
-                    業務内容 <i class="fas fa-angle-right"></i>
-                  </li>
-                </a>
-              </ul>
-            </li>
-            <li class="bl_over-navItem">
-              <p class="bl_over-navTxt hl_pd-leftReset">
-                マイクロ水力発電<i class="fas fa-plus el_icon-toggle"></i>
-              </p>
-              <ul class="bl_over-acc">
-                <a href="micro-hydro.html" class="el_acc-link">
-                  <li class="bl_acc-txt bl_over-navTxt">
-                    マイクロ水力発電とは？ <i class="fas fa-angle-right"></i>
-                  </li>
-                </a>
-                <a href="micro-feature.html" class="el_acc-link">
-                  <li class="bl_acc-txt bl_over-navTxt">
-                    マイクロ水力の特徴 <i class="fas fa-angle-right"></i>
-                  </li>
-                </a>
-                <a href="product.html" class="el_acc-link">
-                  <li class="bl_acc-txt bl_over-navTxt">
-                    取り扱い製品 <i class="fas fa-angle-right"></i>
-                  </li>
-                </a>
-                <a href="delivery_record.html" class="el_acc-link">
-                  <li class="bl_acc-txt bl_over-navTxt">
-                    納入事例 <i class="fas fa-angle-right"></i>
-                  </li>
-                </a>
-              </ul>
-              <br />
-              <a href="contact.html">
-            <li class="bl_acc-txt">
-              <button class="el_btn hl_mr-0auto hl_mr-top30">お問い合わせ</button>
-            </li>
-            </a>
-            </li>
-          </ul>
-
-          <div class="el_over-logo">
-            <a href="index.html">
-              <img src="img/logo_text.svg" alt="ロゴ" />
-            </a>
-          </div>
-        </nav>
-      </div>
-      <!-- /.bl_over-nav -->
-    </div>
-
     <div class="el_top-img hl_sec-drops">
       <img src="/img/energy2_img.jpg" alt="いいことたくさんの水力発電" />
     </div>
@@ -515,135 +391,11 @@ if (($jumpPage == 0 && $sendmail == 1) || ($jumpPage == 0 && ($confirmDsp == 0 &
       </div>
 
       <nav class="bl_header-nav el_bg-menu">
-        <ul class="bl_nav-list">
-          <a href="index.html">
-            <li class="el_nav-item el_nav-text hl_text-drops">HOME</li>
-          </a>
-          <li class="el_nav-text hl_point">
-            <p class="el_nav-item hl_text-drops hl_text-w">
-              会社案内 <i class="fas fa-angle-down"></i>
-            </p>
-            <ul class="bl_list-dropdown el_bg-menu">
-              <a href="about.html#company" class="dropdown-link">
-                <li class="el_nav-text el_dropdown-text hl_text-drops">企業情報</li>
-              </a>
-              <a href="about.html#business" class="dropdown-link">
-                <li class="el_nav-text el_dropdown-text hl_text-drops">業務内容</li>
-              </a>
-            </ul>
-          </li>
-          <li class="el_nav-text hl_point">
-            <p class="el_nav-item hl_text-drops hl_text-w">
-              マイクロ水力発電 <i class="fas fa-angle-down"></i>
-            </p>
-            <ul class="bl_list-dropdown el_bg-menu">
-              <li class="el_dropdown-text el_nav-text hl_text-drops">
-                <a href="micro-hydro.html" class="dropdown-link">
-                  マイクロ水力発電とは？
-                </a>
-              </li>
-              <a href="micro-feature.html" class="dropdown-link">
-                <li class="el_dropdown-text el_nav-text hl_text-drops">
-                  マイクロ水力の特徴
-                </li>
-              </a>
-              <a href="product.html" class="dropdown-link">
-                <li class="el_dropdown-text el_nav-text hl_text-drops">
-                  取り扱い製品
-                </li>
-              </a>
-              <a href="delivery_record.html" class="dropdown-link">
-                <li class="el_dropdown-text el_nav-text hl_text-drops">納入事例</li>
-              </a>
-            </ul>
-          </li>
-          <a href="contact.html">
-            <li class="el_nav-item el_nav-text hl_text-drops">お問い合わせ</li>
-          </a>
-        </ul>
       </nav>
     </div>
   </header>
 
   <main role="main">
-    <div class="overlay">
-      <button type="button" class="el_btn-nav">
-        <a class="el_btn-hm">
-          <i class="fas fa-bars"></i>
-        </a>
-      </button>
-
-      <div class="bl_overlay">
-        <nav class="bl_over-nav">
-          <ul class="bl_over-navList">
-            <a href="index.html">
-              <li class="bl_over-navTxt hl_pd-leftReset">
-                <p class="">HOME</p>
-                <i class="fas fa-angle-right"></i>
-              </li>
-            </a>
-            <li class="bl_over-navItem">
-              <p class="bl_over-navTxt hl_pd-leftReset">
-                会社案内<i class="fas fa-plus el_icon-toggle"></i>
-              </p>
-              <ul class="bl_over-acc">
-                <a href="about.html#company" class="el_acc-link">
-                  <li class="bl_acc-txt bl_over-navTxt">
-                    企業情報 <i class="fas fa-angle-right"></i>
-                  </li>
-                </a>
-                <a href="about.html#business" class="el_acc-link">
-                  <li class="bl_acc-txt bl_over-navTxt">
-                    業務内容 <i class="fas fa-angle-right"></i>
-                  </li>
-                </a>
-              </ul>
-            </li>
-            <li class="bl_over-navItem">
-              <p class="bl_over-navTxt hl_pd-leftReset">
-                マイクロ水力発電<i class="fas fa-plus el_icon-toggle"></i>
-              </p>
-              <ul class="bl_over-acc">
-                <a href="micro-hydro.html" class="el_acc-link">
-                  <li class="bl_acc-txt bl_over-navTxt">
-                    マイクロ水力発電とは？ <i class="fas fa-angle-right"></i>
-                  </li>
-                </a>
-                <a href="micro-feature.html" class="el_acc-link">
-                  <li class="bl_acc-txt bl_over-navTxt">
-                    マイクロ水力の特徴 <i class="fas fa-angle-right"></i>
-                  </li>
-                </a>
-                <a href="product.html" class="el_acc-link">
-                  <li class="bl_acc-txt bl_over-navTxt">
-                    取り扱い製品 <i class="fas fa-angle-right"></i>
-                  </li>
-                </a>
-                <a href="delivery_record.html" class="el_acc-link">
-                  <li class="bl_acc-txt bl_over-navTxt">
-                    納入事例 <i class="fas fa-angle-right"></i>
-                  </li>
-                </a>
-              </ul>
-              <br />
-              <a href="contact.html">
-            <li class="bl_acc-txt">
-              <button class="el_btn hl_mr-0auto hl_mr-top30">お問い合わせ</button>
-            </li>
-            </a>
-            </li>
-          </ul>
-
-          <div class="el_over-logo">
-            <a href="index.html">
-              <img src="img/logo_text.svg" alt="ロゴ" />
-            </a>
-          </div>
-        </nav>
-      </div>
-      <!-- /.bl_over-nav -->
-    </div>
-
     <div class="el_top-img hl_sec-drops">
       <img src="/img/energy2_img.jpg" alt="いいことたくさんの水力発電" />
     </div>
@@ -978,10 +730,7 @@ if (($jumpPage == 0 && $sendmail == 1) || ($jumpPage == 0 && ($confirmDsp == 0 &
 					}
 				}
 			}
-			function copyright()
-			{
-				echo '<a style="display:block;text-align:center;margin:15px 0;font-size:11px;color:#aaa;text-decoration:none" href="http://www.php-factory.net/" target="_blank">- PHP工房 -</a>';
-			}
+			//
 			//----------------------------------------------------------------------
 			//  関数定義(END)
 			//----------------------------------------------------------------------
