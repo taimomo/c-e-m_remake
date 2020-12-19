@@ -337,7 +337,7 @@ if (($jumpPage == 0 && $sendmail == 1) || ($jumpPage == 0 && ($confirmDsp == 0 &
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>確認画面:株式会社シーイーエム</title>
+  <title>完了画面:株式会社シーイーエム</title>
   <meta name="Description" , content="小水力発電の導入, クリーンエネルギーの普及に貢献します。取り扱い製品情報や納入事例を紹介。" />
   <meta property="og:locale" content="ja_JP" />
   <meta property="og:type" content="website" />
