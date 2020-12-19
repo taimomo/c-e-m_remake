@@ -1511,6 +1511,110 @@ footer {
   }
 }
 
+.bl_form-text {
+  margin: 30px 0;
+}
+
+#formWrap {
+  width: 70vw;
+  margin: 0 auto;
+  color: #3a3a3a;
+  line-height: 120%;
+  font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+  #formWrap {
+    width: 95%;
+    margin: 0 auto;
+  }
+}
+
+.formTable {
+  width: 100%;
+  margin: 0 auto;
+  border-collapse: collapse;
+}
+
+.formTable td,
+.formTable th {
+  border: 1px solid #3a3a3a;
+  padding: 10px;
+}
+
+@media (max-width: 768px) {
+  .formTable td,
+  .formTable th {
+    width: auto;
+    display: block;
+  }
+}
+
+.formTable th {
+  width: 30%;
+  font-weight: normal;
+  background: #a9d3fa;
+  text-align: left;
+}
+
+@media (max-width: 768px) {
+  .formTable th {
+    width: 100%;
+    margin-top: 5px;
+    border-bottom: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .formTable td {
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  input[type="text"],
+  textarea {
+    width: 85%;
+    padding: 5px;
+    font-size: 110%;
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+p.error_messe {
+  margin: 5px 0;
+  color: red;
+}
+
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+  width: 120px;
+  height: 30px;
+  margin: 20px 0;
+}
+
+@media (max-width: 768px) {
+  input[type="submit"],
+  input[type="reset"],
+  input[type="button"] {
+    display: block;
+    width: 50%;
+    height: 40px;
+  }
+}
+
+input[type="submit"] {
+  margin-right: 10px;
+}
+
+@media (max-width: 768px) {
+  input[type="submit"] {
+    margin-right: 0;
+  }
+}
+
 /* /モジュールグループend */
 /* ヘルパーグループ */
 .hl_text-posiC {

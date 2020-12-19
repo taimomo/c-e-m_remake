@@ -3,103 +3,158 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>株式会社シーイーエム:お問い合わせ</title>
+    <title>マイクロ水力発電のフロントランナー:株式会社シーイーエム</title>
+    <meta
+      name="Description"
+      ,
+      content="小水力発電の導入, クリーンエネルギーの普及に貢献します。取り扱い製品情報や納入事例を紹介。"
+    />
+    <meta property="og:locale" content="ja_JP" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="マイクロ水力発電のフロントランナー：株式会社シーイーエム"
+    />
+    <meta
+      property="og:description"
+      content="小水力発電の導入, クリーンエネルギーの普及に貢献します。取り扱い製品情報や納入事例を紹介。"
+    />
+    <meta property="og:url" content="http://www.c-e-m.co.jp" />
+    <meta property="og:site_name" content="CEM" />
+    <!-- <meta property="og:image" content=""> -->
+
     <!-- BootstrapのCSS読み込み -->
     <link
-    href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-    rel="stylesheet"
-    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
-    crossorigin="anonymous"
-    />
-    <script
-      src="https://kit.fontawesome.com/51807b857f.js"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
       crossorigin="anonymous"
-    ></script>
+    />
     <link rel="stylesheet" href="css/jumbotron.css" />
-    <link rel="stylesheet" href="css/style.css" />
 
+    <link rel="stylesheet" href="css/style.css" />
     <link rel="icon" href="img/logo.png" />
     <link rel="icon" href="img/logo.svg" />
   </head>
   <body>
     <header></header>
-    
-    <div class="breadcrumb-trail">
-      <div>
-        <p><a href="">Home</a> > お問い合わせ</p>
+
+    <main role="main">
+      <div class="overlay"></div>
+
+      <div class="el_top-img hl_sec-drops">
+        <img src="/img/energy2_img.jpg" alt="いいことたくさんの水力発電" />
       </div>
-    </div>
 
-    <div class="wrapper">
-      <main>
-        <div id="c_pad">
-          <h3>お問い合わせフォーム</h3>
+      <div class="bl_breadcrumb-trail">
+        <div class="el_trail-text">
           <p>
-            会社及び業務に関するお問い合わせを承っております。
-            下記のフォームにご記入の上、<br />
-            入力内容をご確認後［送信］をクリックしてください。<br />追って担当者よりご連絡差し上げます。
+            <a class="el_trail-link" href="index.html">Home</a> > お問い合わせ
           </p>
-          <div id="form">
-            <form name="form1" enctype="multipart/form-data" method="post" action="<?php echo $_SERVER["REQUEST_URI"];?>">
-              <input type="hidden" name="mode" value="form">
-              <table class="ta1">
-              <!-- 入力／確認 -->
-              <!--<tr><th class="tamidashi" colspan="2">お問い合わせフォーム</th></tr>-->
-              <tr>
-              <th width="150">お名前<span style="color:red">※</span></th>
-              <td>
-              <input name="item1" value="<?php echo $form["item1"];?>" type="text" size="40" maxlength="500" class="ws">
-              <?php if ($msg["item1"]) echo '<div style="color:red">' . $msg["item1"] . '</div>'; ?>
-              </td>
-              </tr>
-              <tr>
-              <th width="150">メールアドレス<span style="color:red">※</span></th>
-              <td>
-              <input name="item2" value="<?php echo $form["item2"];?>" type="text" size="40" maxlength="500" class="ws">
-              <?php if ($msg["item2"]) echo '<div style="color:red">' . $msg["item2"] . '</div>'; ?>
-              </td>
-              </tr>
-              <tr>
-              <th>お問い合わせ内容<span style="color:red">※</span></th>
-              <td>
-              <textarea name="item3" cols="40" rows="10" class="wl"><?php echo $form["item3"]; ?></textarea>
-              <?php if ($msg["item3"]) echo '<div style="color:red">' . $msg["item3"] . '</div>'; ?>
-              </td>
-              </tr>
-              </table>
-              <div class="c">
-              <input type="submit" value="内容を確認する" class="btn">
-              &nbsp;
-              <input type="reset" value="リセット" class="btn">
-              </div>
-              </form>
-          </div>
-
-          <div>
-            <div>
-              <p>トップへ</p>
-            </div>
-          </div>
-
         </div>
-      </main>
+      </div>
+      <!-- /breadcrumb-trail -->
+
+      <section class="ly_section hl_link-posi" id="contact">
+        <div class="bl_title">
+          <h1 class="el_title-text">
+            CONTACT <span class="hl_textS">お問い合わせ</span>
+          </h1>
+        </div>
+        <p class="bl_form-text">
+          会社及び業務に関するお問い合わせを承っております。
+          下記のフォームにご記入の上、
+          入力内容をご確認後［送信］をクリックしてください。<br />追って担当者よりご連絡差し上げます。
+        </p>
+        <div id="formWrap">
+          <form method="post" action="mail.php">
+            <table class="formTable">
+              <tr>
+                <th>お名前</th>
+                <td>
+                  <input
+                    size="20"
+                    type="text"
+                    name="お名前"
+                    placeholder="お名前"
+                  />
+                  ※必須
+                </td>
+              </tr>
+              <tr>
+                <th>電話番号（半角）</th>
+                <td>
+                  <input
+                    size="30"
+                    type="text"
+                    name="電話番号"
+                    placeholder="XXX-XXXX-XXXX"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <th>Mail（半角）</th>
+                <td>
+                  <input
+                    size="30"
+                    type="text"
+                    name="Email"
+                    placeholder="aaa@example.com"
+                  />
+                  ※必須
+                </td>
+              </tr>
+              <tr>
+                <th>お問い合わせ内容<br /></th>
+                <td>
+                  <textarea
+                    name="お問い合わせ内容"
+                    cols="60"
+                    rows="5"
+                    placeholder="お問い合わせ内容"
+                  ></textarea>
+                </td>
+              </tr>
+            </table>
+            <p align="center">
+              <input type="submit" value="確認" /><input
+                type="reset"
+                value="リセット"
+              />
+            </p>
+          </form>
+          <p>
+            ※IPアドレスを記録しております。いたずらや嫌がらせ等はご遠慮ください
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <div class="el_top-btn">
+      <a href="#"> <i class="fas fa-angle-double-up"></i><br />トップへ </a>
     </div>
 
     <footer></footer>
+
     <!-- jQuery読み込み -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.min.js"
+      integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+      crossorigin="anonymous"
+    ></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
+
     <!-- BootstrapのJS読み込み -->
     <script
       src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
       integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
       crossorigin="anonymous"
     ></script>
-    <script src="javascript/main.js"></script>
-    <script>
-      $(function () {
-        $("header").load("./include/header.html");
-        $("footer").load("./include/footer.html");
-      });
-    </script>
+    <script src="/javascript/main.js" async></script>
+    <!-- fontawesomeの読み込み -->
+    <script
+      src="https://kit.fontawesome.com/51807b857f.js"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

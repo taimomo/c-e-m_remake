@@ -4,16 +4,20 @@
 $txt_color: #3a3a3a;
 $menu_color: #1760a0;
 $white_color: #fff;
-$line_color:#467d87;
-$link_color:#4699ca;
-$under_color:#979797;
+$line_color: #467d87;
+$link_color: #4699ca;
+$under_color: #979797;
 
 $screen-lg: 1440px;
 $screen-md: 768px;
 $screen-sm: 426px;
-$bp-list: (sm: screen and (max-width: #{$screen-sm}),
-  md: screen and (max-width: #{$screen-md}),
-  lg: screen and (max-width: #{$screen-lg})) !default;
+$bp-list: (sm: screen and (max-width: #{$screen-sm},
+  ),
+  md: screen and (max-width: #{$screen-md},
+  ),
+  lg: screen and (max-width: #{$screen-lg},
+  ),
+) !default;
 
 @mixin mq($bp-key: lg) {
   @media #{map-get($bp-list, $bp-key)} {
@@ -23,8 +27,7 @@ $bp-list: (sm: screen and (max-width: #{$screen-sm}),
 
 /* ベースグループ */
 body {
-  font-family: "Hiragino Kaku Gothic ProN", "Arial Narrow", Arial, Helvetica,
-    sans-serif;
+  font-family: "Hiragino Kaku Gothic ProN", "Arial Narrow", Arial, Helvetica, sans-serif;
   line-height: 1.7;
 }
 
@@ -621,7 +624,7 @@ footer {
     margin: {
       right: 0;
       bottom: 20px;
-      top: 20px
+      top: 20px;
     }
   }
 }
@@ -660,7 +663,7 @@ footer {
 }
 
 .bl_media-bodyG {
-  @media screen and (min-width:769px) {
+  @media screen and (min-width: 769px) {
     display: grid;
     grid-template-columns: 50% 50%;
 
@@ -1406,6 +1409,97 @@ footer {
   @include mq(md) {
     text-align: center;
     padding: 0;
+  }
+}
+
+.bl_form-text {
+  margin: 30px 0;
+}
+
+#formWrap {
+  width: 70vw;
+  margin: 0 auto;
+  color: $txt_color;
+  line-height: 120%;
+  font-size: 1rem;
+
+  @include mq(md) {
+    width: 95%;
+    margin: 0 auto;
+  }
+}
+
+.formTable {
+  width: 100%;
+  margin: 0 auto;
+  border-collapse: collapse;
+
+  td,
+  th {
+    border: 1px solid $txt_color;
+    padding: 10px;
+
+    @include mq(md) {
+      width: auto;
+      display: block;
+    }
+  }
+
+  th {
+    width: 30%;
+    font-weight: normal;
+    background: rgb(169, 211, 250);
+    text-align: left;
+
+    @include mq(md) {
+      width: 100%;
+      margin-top: 5px;
+      border-bottom: 0;
+    }
+  }
+
+  td {
+    @include mq(md) {
+      text-align: center;
+    }
+  }
+}
+
+input[type="text"],
+textarea {
+  @include mq(md) {
+    width: 85%;
+    padding: 5px;
+    font-size: 110%;
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+p.error_messe {
+  margin: 5px 0;
+  color: red;
+}
+
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+  width: 120px;
+  height: 30px;
+  margin: 20px 0;
+
+  @include mq(md) {
+    display: block;
+    width: 50%;
+    height: 40px;
+  }
+}
+
+input[type="submit"] {
+  margin-right: 10px;
+
+  @include mq(md) {
+    margin-right: 0;
   }
 }
 
