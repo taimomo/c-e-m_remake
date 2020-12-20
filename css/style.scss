@@ -1376,6 +1376,10 @@ footer {
     object-fit: cover;
   }
 
+  &:hover {
+    cursor: pointer;
+  }
+
   &:last-child {
     margin-right: 0;
   }
