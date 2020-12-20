@@ -1485,6 +1485,10 @@ footer {
      object-fit: cover;
 }
 
+.bl_chimg-item:hover {
+  cursor: pointer;
+}
+
 .bl_chimg-item:last-child {
   margin-right: 0;
 }
