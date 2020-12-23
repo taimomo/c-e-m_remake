@@ -990,6 +990,11 @@ footer {
     weight: bold;
   }
 
+  &:hover {
+    background: $white_color;
+    color: $link_color;
+  }
+
   @include mq(md) {
     width: 60vw;
   }

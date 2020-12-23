@@ -1085,6 +1085,11 @@ footer {
   font-weight: bold;
 }
 
+.el_btn-grid:hover {
+  background: #fff;
+  color: #4699ca;
+}
+
 @media (max-width: 768px) {
   .el_btn-grid {
     width: 60vw;
