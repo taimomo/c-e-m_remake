@@ -128,6 +128,8 @@ footer {
   display: grid;
   -ms-grid-columns: 2fr 1fr;
       grid-template-columns: 2fr 1fr;
+  -ms-grid-rows: auto auto;
+      grid-template-rows: auto auto;
 }
 
 @media (max-width: 768px) {
@@ -539,7 +541,7 @@ footer {
 }
 
 @media (max-width: 768px) {
-  .bl_link {
+  .el_link {
     margin-top: 60px;
   }
 }
@@ -741,6 +743,8 @@ footer {
     display: grid;
     -ms-grid-columns: 50% 50%;
         grid-template-columns: 50% 50%;
+    -ms-grid-rows: auto auto;
+        grid-template-rows: auto auto;
   }
   .bl_media-bodyG .el_grid-A {
     -webkit-box-ordinal-group: 2;
