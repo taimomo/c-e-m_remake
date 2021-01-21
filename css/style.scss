@@ -660,7 +660,7 @@ footer {
 
 .bl_media-flEven {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
 
   @include mq(md) {
     display: block;
@@ -670,17 +670,14 @@ footer {
     margin: 5%;
 
     img {
-      width: 30vw;
+      width: 100%;
       height: 100%;
       object-fit: cover;
-
-      @include mq(md) {
-        width: 50vw;
-      }
     }
 
     @include mq(md) {
-      margin: 5% 0;
+      margin: 5% auto;
+      width: 50vw;
     }
   }
 }
