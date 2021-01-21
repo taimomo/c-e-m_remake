@@ -526,6 +526,7 @@ footer {
 }
 
 .el_movie {
+  -ms-grid-column: 1;
   width: 100%;
 }
 
@@ -538,6 +539,10 @@ footer {
   .el_movie {
     height: 60vh;
   }
+}
+
+.el_link {
+  -ms-grid-column: 2;
 }
 
 @media (max-width: 768px) {
@@ -651,10 +656,11 @@ footer {
 
 .bl_media-imgWrapper {
   margin-right: 30px;
+  max-height: 250px;
 }
 
 .bl_media-imgWrapper > img {
-  max-height: 50vh;
+  height: 100%;
   width: 300px;
   -o-object-fit: cover;
      object-fit: cover;
@@ -750,6 +756,7 @@ footer {
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
             order: 1;
+    -ms-grid-column: 1;
   }
   .bl_media-bodyG .el_grid-B {
     -webkit-box-ordinal-group: 3;
@@ -757,21 +764,29 @@ footer {
             order: 2;
     grid-row: span 2;
     text-align: center;
+    -ms-grid-column: 2;
+    -ms-grid-row-span: 2;
   }
   .bl_media-bodyG .el_grid-C {
     -webkit-box-ordinal-group: 4;
         -ms-flex-order: 3;
             order: 3;
+    -ms-grid-column: 1;
+    -ms-grid-row: 2;
   }
   .bl_media-bodyG .el_grid-D {
     -webkit-box-ordinal-group: 5;
         -ms-flex-order: 4;
             order: 4;
+    -ms-grid-column: 2;
+    -ms-grid-row: 1;
   }
   .bl_media-bodyG .el_grid-E {
     -webkit-box-ordinal-group: 6;
         -ms-flex-order: 5;
             order: 5;
+    -ms-grid-column: 2;
+    -ms-grid-row: 2;
   }
 }
 
@@ -1266,6 +1281,22 @@ footer {
   font-size: 1rem;
 }
 
+.el_balloon-itemBAD :nth-child(1) {
+  -ms-grid-column: 1;
+}
+
+.el_balloon-itemBAD :nth-child(2) {
+  -ms-grid-column: 2;
+}
+
+.el_balloon-itemBAD :nth-child(3) {
+  -ms-grid-column: 3;
+}
+
+.el_balloon-itemBAD :nth-child(4) {
+  -ms-grid-column: 4;
+}
+
 .el_squear-item {
   height: 100%;
 }
@@ -1546,7 +1577,7 @@ footer {
 }
 
 .bl_footer-cem {
-  margin: auto 2%;
+  margin: 80px 40px;
   font-family: "ヒラギノ明朝 ProN", sans-serif;
   font-size: 1.8em;
 }

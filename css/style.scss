@@ -501,6 +501,7 @@ footer {
 }
 
 .el_movie {
+  -ms-grid-column: 1;
   width: 100%;
 
   iframe {
@@ -514,6 +515,8 @@ footer {
 }
 
 .el_link {
+  -ms-grid-column: 2;
+
   @include mq(md) {
     margin-top: 60px;
   }
@@ -614,9 +617,10 @@ footer {
 .bl_media-imgWrapper {
   // flex: 0.5 1 27.58333%;
   margin-right: 30px;
+  max-height: 250px;
 
   >img {
-    max-height: 50vh;
+    height: 100%;
     width: 300px;
     object-fit: cover;
 
@@ -695,24 +699,33 @@ footer {
 
     .el_grid-A {
       order: 1;
+      -ms-grid-column: 1;
     }
 
     .el_grid-B {
       order: 2;
       grid-row: span 2;
       text-align: center;
+      -ms-grid-column: 2;
+      -ms-grid-row-span: 2;
     }
 
     .el_grid-C {
       order: 3;
+      -ms-grid-column: 1;
+      -ms-grid-row: 2;
     }
 
     .el_grid-D {
       order: 4;
+      -ms-grid-column: 2;
+      -ms-grid-row: 1;
     }
 
     .el_grid-E {
       order: 5;
+      -ms-grid-column: 2;
+      -ms-grid-row: 2;
     }
   }
 }
@@ -1160,6 +1173,12 @@ footer {
     padding: 10px;
     font-size: 1rem;
   }
+
+  @for $index from 1 through 4 {
+    :nth-child(#{$index}) {
+      -ms-grid-column: #{$index};
+    }
+  }
 }
 
 .el_squear-item {
@@ -1432,7 +1451,7 @@ footer {
 }
 
 .bl_footer-cem {
-  margin: auto 2%;
+  margin: 80px 40px;
 
   font: {
     family: "ヒラギノ明朝 ProN", sans-serif;
