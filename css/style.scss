@@ -727,6 +727,15 @@ footer {
       -ms-grid-column: 2;
       -ms-grid-row: 2;
     }
+
+    .el_grid-F {
+      order: 2;
+      grid-row: span 2;
+      text-align: center;
+      -ms-grid-column: 1;
+      -ms-grid-row: 1;
+      -ms-grid-row-span: 2;
+    }
   }
 }
 
@@ -1175,7 +1184,7 @@ footer {
   }
 
   @for $index from 1 through 4 {
-    :nth-child(#{$index}) {
+    &:nth-child(#{$index}) {
       -ms-grid-column: #{$index};
     }
   }
