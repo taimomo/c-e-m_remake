@@ -1,1 +1,14 @@
-<svg height="84.325" viewBox="0 0 424.39 84.325" width="424.39" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><clipPath id="a"><path d="m0 1h424.39v84.325h-424.39z"/></clipPath><g clip-path="url(#a)" transform="translate(0 -1)"><text fill="#203b8c" font-family="YuMin-Extrabold, YuMincho" font-size="21" font-weight="800" transform="translate(160.39 21.171)"><tspan x="0" y="18">Consulting &amp; Engineering</tspan><tspan x="0" y="50">of Manufacturing</tspan></text><g font-family="Helvetica-BoldOblique, Helvetica" font-size="60" font-style="oblique" font-weight="700"><text fill="#2e4e8c" transform="matrix(.985 -.174 .174 .985 5.599 31.389)"><tspan x="0" y="46">CEM</tspan></text><text fill="#8c93ad" transform="matrix(.985 -.174 .174 .985 4.199 30.27)"><tspan x="0" y="46">CEM</tspan></text><text fill="#0a5aa3" transform="matrix(.985 -.174 .174 .985 2.8 29.152)"><tspan x="0" y="46">CEM</tspan></text><text fill="#8c93ad" transform="matrix(.985 -.174 .174 .985 1.4 28.034)"><tspan x="0" y="46">CEM</tspan></text><text fill="#203b8c" transform="matrix(.985 -.174 .174 .985 0 26.915)"><tspan x="0" y="46">CEM</tspan></text></g></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="453.922" height="171.077" viewBox="0 0 453.922 171.077">
+  <g id="ロゴ_テキスト込_" data-name="ロゴ（テキスト込）" transform="translate(0 0.018)">
+    <g id="Group" transform="translate(0 0)">
+      <text id="Consulting_Enginee" data-name="Consulting &amp; Enginee" transform="translate(157.645 29.702)" fill="#203b8c" font-size="18" font-family="YuMin-Extrabold, YuMincho" font-weight="800"><tspan x="0" y="16">Consulting &amp; Engineering </tspan><tspan x="0" y="41">of Manufacturing</tspan></text>
+      <g id="ロゴ" transform="translate(0 0)">
+        <text id="CEM" transform="matrix(0.985, -0.174, 0.174, 0.985, 5.342, 35.156)" fill="#2e4e8c" font-size="60" font-family="Helvetica-BoldOblique, Helvetica" font-weight="700" font-style="oblique"><tspan x="0" y="46">CEM</tspan></text>
+        <text id="CEM-2" data-name="CEM" transform="matrix(0.985, -0.174, 0.174, 0.985, 4.006, 32.831)" fill="#8c93ad" font-size="60" font-family="Helvetica-BoldOblique, Helvetica" font-weight="700" font-style="oblique"><tspan x="0" y="46">CEM</tspan></text>
+        <text id="CEM-3" data-name="CEM" transform="matrix(0.985, -0.174, 0.174, 0.985, 2.671, 30.506)" fill="#0a5aa3" font-size="60" font-family="Helvetica-BoldOblique, Helvetica" font-weight="700" font-style="oblique"><tspan x="0" y="46">CEM</tspan></text>
+        <text id="CEM-4" data-name="CEM" transform="matrix(0.985, -0.174, 0.174, 0.985, 1.335, 28.181)" fill="#8c93ad" font-size="60" font-family="Helvetica-BoldOblique, Helvetica" font-weight="700" font-style="oblique"><tspan x="0" y="46">CEM</tspan></text>
+        <text id="CEM-5" data-name="CEM" transform="matrix(0.985, -0.174, 0.174, 0.985, 0, 25.856)" fill="#203b8c" font-size="60" font-family="Helvetica-BoldOblique, Helvetica" font-weight="700" font-style="oblique"><tspan x="0" y="46">CEM</tspan></text>
+      </g>
+    </g>
+  </g>
+</svg>
