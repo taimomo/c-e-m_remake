@@ -680,13 +680,7 @@ footer {
 }
 
 .bl_media-imgWrapper .el_img-large {
-  width: auto;
-}
-
-@media (max-width: 768px) {
-  .bl_media-imgWrapper .el_img-large {
-    width: 80%;
-  }
+  width: 100%;
 }
 
 .bl_media-imgWrapper .bl_media-rev {
