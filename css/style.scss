@@ -617,17 +617,23 @@ footer {
 .bl_media-imgWrapper {
   // flex: 0.5 1 27.58333%;
   margin-right: 30px;
-  max-height: 250px;
+  max-height: 300px;
+  width: 40vw;
+  min-width: 250px;
+  max-width: 300px;
+
+  @include mq(md) {
+    width: 100%;
+    max-height: none;
+    height: 50vh;
+    max-width: none;
+    min-width: 0;
+  }
 
   >img {
     height: 100%;
-    width: 300px;
+    width: 100%;
     object-fit: cover;
-
-    @include mq(md) {
-      width: 100%;
-      height: auto;
-    }
   }
 
   .bl_img {
