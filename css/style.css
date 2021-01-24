@@ -392,16 +392,13 @@ footer {
 }
 
 .el_contents-imgArea {
-  width: 20vw;
-  height: 200px;
+  height: 30vh;
   margin: 0 auto;
 }
 
 @media (max-width: 768px) {
   .el_contents-imgArea {
-    width: 100%;
-    height: 45vh;
-    text-align: center;
+    height: 35vh;
   }
 }
 
@@ -1426,8 +1423,7 @@ footer {
 
 .bl_number-img {
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  width: 100%;
 }
 
 .bl_btn-dis {
