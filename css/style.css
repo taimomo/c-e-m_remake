@@ -656,21 +656,27 @@ footer {
 
 .bl_media-imgWrapper {
   margin-right: 30px;
-  max-height: 250px;
+  max-height: 300px;
+  width: 40vw;
+  min-width: 250px;
+  max-width: 300px;
+}
+
+@media (max-width: 768px) {
+  .bl_media-imgWrapper {
+    width: 100%;
+    max-height: none;
+    height: 50vh;
+    max-width: none;
+    min-width: 0;
+  }
 }
 
 .bl_media-imgWrapper > img {
   height: 100%;
-  width: 300px;
+  width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-}
-
-@media (max-width: 768px) {
-  .bl_media-imgWrapper > img {
-    width: 100%;
-    height: auto;
-  }
 }
 
 @media (max-width: 768px) {
