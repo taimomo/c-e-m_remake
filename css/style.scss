@@ -379,14 +379,11 @@ footer {
 }
 
 .el_contents-imgArea {
-  width: 20vw;
-  height: 200px;
+  height: 30vh;
   margin: 0 auto;
 
   @include mq(md) {
-    width: 100%;
-    height: 45vh;
-    text-align: center;
+    height: 35vh;
   }
 }
 
@@ -1333,7 +1330,7 @@ footer {
 
 .bl_number-img {
   height: 100%;
-  object-fit: cover;
+  width: 100%;
 }
 
 .bl_btn-dis {
