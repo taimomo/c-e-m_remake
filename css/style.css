@@ -1,5 +1,4 @@
 @charset "UTF-8";
-@import url(sanitize.css);
 /* ベースグループ */
 body {
   font-family: "Hiragino Kaku Gothic ProN", "Arial Narrow", Arial, Helvetica, sans-serif;

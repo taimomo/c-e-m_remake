@@ -273,7 +273,7 @@ if (($confirmDsp == 0 || $sendmail == 1) && $empty_flag != 1) {
   <!-- BootstrapのCSS読み込み -->
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
-  <link rel="stylesheet" href="css/jumbotron.css" />
+
 
   <link rel="stylesheet" href="css/style.css" />
   <link rel="icon" href="img/logo.png" />
@@ -373,7 +373,6 @@ if (($jumpPage == 0 && $sendmail == 1) || ($jumpPage == 0 && ($confirmDsp == 0 &
   <!-- BootstrapのCSS読み込み -->
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
-  <link rel="stylesheet" href="css/jumbotron.css" />
 
   <link rel="stylesheet" href="css/style.css" />
   <link rel="icon" href="img/logo.png" />
