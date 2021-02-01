@@ -68,6 +68,12 @@ li {
   list-style: none;
 }
 
+img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
 main {
   width: 90%;
   margin: 0 auto;
@@ -100,8 +106,6 @@ footer {
   top: 0;
 
   @include mq(md) {
-    width: 100%;
-    height: 60px;
     justify-content: center;
     background: $white_color;
   }
@@ -120,7 +124,7 @@ footer {
 
 .ly_contents {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   margin: 30px 0;
 
   @include mq(md) {
@@ -143,7 +147,6 @@ footer {
   display: flex;
   justify-content: space-between;
   background-color: #000;
-  width: 100%;
 
   @include mq(md) {
     flex-direction: column;
@@ -185,10 +188,6 @@ footer {
     top: 20px;
     left: 10px;
   }
-}
-
-.el_nav-item {
-  padding: 10px;
 }
 
 .el_dropdown-text {
@@ -242,7 +241,7 @@ footer {
 
   @include mq(md) {
     position: fixed;
-    top: 6px;
+    top: 15px;
     right: 20px;
     z-index: 999;
     display: inline;
@@ -296,10 +295,6 @@ footer {
   margin: 20% auto;
 }
 
-.bl_over-navList {
-  text-align: left;
-}
-
 .bl_over-navTxt {
   display: table;
   width: 100%;
@@ -347,10 +342,6 @@ footer {
   }
 }
 
-.el_trail-text {
-  text-align: left;
-}
-
 .el_trail-link {
   text-decoration: underline;
   color: #3094ff;
@@ -374,6 +365,10 @@ footer {
     size: 1.8rem;
     style: italic;
     weight: bold;
+  }
+
+  @include mq(sm) {
+    font-size: 1.2rem;
   }
 }
 
@@ -401,16 +396,6 @@ footer {
     width: 100%;
     height: 35vh;
     text-align: center;
-  }
-}
-
-.el_contents-img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-
-  @include mq(md) {
-    max-width: 100%;
   }
 }
 
@@ -477,14 +462,6 @@ footer {
   }
 }
 
-.bl_content-posts {
-  margin-top: 30px;
-}
-
-.bl_vert-posts {
-  padding: 1em;
-}
-
 .bl_vert-postsItem {
   padding: 15px 0;
   border-bottom: 1px dotted $txt_color;
@@ -498,20 +475,11 @@ footer {
   margin-bottom: 10px;
 }
 
-.bl_vert-postsDate {
-  font-size: 1rem;
-}
-
 .el_movie {
   -ms-grid-column: 1;
-  width: 100%;
 
   iframe {
     width: 100%;
-    height: 60vh;
-  }
-
-  @include mq(md) {
     height: 60vh;
   }
 }
@@ -527,7 +495,7 @@ footer {
 .el_link-area {
   padding: 20px;
   background-color: aliceblue;
-  margin: 10px 10px;
+  margin: 10px;
   text-align: center;
   border: 1px solid $under_color;
 }
@@ -545,7 +513,6 @@ footer {
       height: 40vh;
     }
   }
-
 }
 
 .bl_faq {
@@ -617,38 +584,23 @@ footer {
 }
 
 .bl_media-imgWrapper {
-  // flex: 0.5 1 27.58333%;
   margin-right: 30px;
-  max-height: 300px;
   width: 40vw;
   min-width: 250px;
   max-width: 300px;
+  max-height: 300px;
 
   @include mq(md) {
     width: 100%;
-    max-height: none;
     height: 50vh;
-    max-width: none;
     min-width: 0;
-  }
-
-  >img {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
+    max-width: none;
+    max-height: none;
   }
 
   .bl_img {
     @include mq(md) {
       width: 40%;
-    }
-  }
-
-  .el_img-large {
-    width: 100%;
-
-    @include mq(md) {
-      // width: auto;
     }
   }
 
@@ -659,7 +611,6 @@ footer {
 
   @include mq(md) {
     margin: {
-      right: 0;
       bottom: 20px;
       top: 20px;
     }
@@ -676,12 +627,6 @@ footer {
 
   figure {
     margin: 5%;
-
-    img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
 
     @include mq(md) {
       margin: 5% auto;
@@ -843,11 +788,6 @@ footer {
     width: 40vw;
     text-align: center;
   }
-}
-
-.bl_grid-img {
-  width: 100%;
-  height: 100%;
 }
 
 .bl_media-gridWrapper2 {
@@ -1051,6 +991,7 @@ footer {
 .el_picto {
   max-height: 30vh;
   margin-top: 60px;
+  width: auto;
 }
 
 .bl_balloon-think {
@@ -1313,6 +1254,7 @@ footer {
 .bl_number-img {
   height: 100%;
   width: 100%;
+  object-fit: contain;
 }
 
 .bl_btn-dis {
@@ -1329,6 +1271,7 @@ footer {
 
 .el_img-mq {
   min-width: 60%;
+  object-fit: contain;
 
   @include mq(md) {
     width: 100%;
@@ -1386,11 +1329,11 @@ footer {
   width: 90px;
   height: 90px;
 
-  img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
+  // img {
+  //   width: 100%;
+  //   height: 100%;
+  //   object-fit: cover;
+  // }
 
   &:hover {
     cursor: pointer;
@@ -1666,6 +1609,10 @@ input[type="submit"] {
   padding-left: 0;
 }
 
+.hl_pd-10 {
+  padding: 10px;
+}
+
 .hl_link-posi {
   margin-top: -80px;
   padding-top: 80px;
@@ -1721,6 +1668,7 @@ input[type="submit"] {
 /* ユニークグループ */
 .logo {
   width: 70%;
+  height: auto;
 
   @include mq(md) {
     display: none;
@@ -1729,10 +1677,17 @@ input[type="submit"] {
 
 .logo_s {
   display: none;
+  height: 100%;
+  object-fit: contain;
 
   @include mq(md) {
     display: inline-block;
-    width: 50%;
+    width: 60%;
+  }
+
+  @include mq(sm) {
+    display: inline-block;
+    width: 80%;
   }
 }
 
