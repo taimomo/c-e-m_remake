@@ -71,6 +71,7 @@ li {
 img {
   height: 100%;
   width: 100%;
+  -o-object-fit: cover;
   object-fit: cover;
 }
 
@@ -217,6 +218,10 @@ footer {
   vertical-align: top;
   background-color: $white_color;
   padding-top: 15px;
+
+  a {
+    display: block;
+  }
 }
 
 .el_over-logo {
@@ -742,6 +747,7 @@ footer {
   grid: {
     template-columns: repeat(4, 1fr);
     template-rows: repeat(3, 1fr);
+    -moz-column-gap: 20px;
     column-gap: 20px;
     row-gap: 10px;
   }
@@ -798,6 +804,7 @@ footer {
   grid: {
     template-columns: repeat(6, 1fr);
     template-rows: repeat(2, 1fr);
+    -moz-column-gap: 50px;
     column-gap: 50px;
     row-gap: 50px;
   }
@@ -853,6 +860,7 @@ footer {
 
   grid: {
     template-columns: repeat(6, 1fr);
+    -moz-column-gap: 50px;
     column-gap: 50px;
     row-gap: 50px;
   }
@@ -908,6 +916,7 @@ footer {
 
   grid: {
     template-columns: repeat(4, 1fr);
+    -moz-column-gap: 20px;
     column-gap: 20px;
     row-gap: 20px;
   }
@@ -952,6 +961,7 @@ footer {
 
   grid: {
     template-columns: repeat(3, 1fr);
+    -moz-column-gap: 20px;
     column-gap: 20px;
     row-gap: 20px;
   }
@@ -1254,6 +1264,7 @@ footer {
 .bl_number-img {
   height: 100%;
   width: 100%;
+  -o-object-fit: contain;
   object-fit: contain;
 }
 
@@ -1271,6 +1282,7 @@ footer {
 
 .el_img-mq {
   min-width: 60%;
+  -o-object-fit: contain;
   object-fit: contain;
 
   @include mq(md) {
@@ -1296,7 +1308,9 @@ footer {
     width: 400px !important;
     max-height: 480px !important;
     margin: 0 auto;
+    -o-object-fit: contain !important;
     object-fit: contain !important;
+    -o-object-position: top;
     object-position: top;
 
     @include mq(md) {
@@ -1537,10 +1551,12 @@ input[type="submit"] {
 }
 
 .hl_text-drops {
+  -webkit-filter: drop-shadow(0px 4px 4px black);
   filter: drop-shadow(0px 4px 4px black);
 }
 
 .hl_sec-drops {
+  -webkit-filter: drop-shadow(0px 2px 2px $under_color);
   filter: drop-shadow(0px 2px 2px $under_color);
 }
 
@@ -1678,6 +1694,7 @@ input[type="submit"] {
 .logo_s {
   display: none;
   height: 100%;
+  -o-object-fit: contain;
   object-fit: contain;
 
   @include mq(md) {
