@@ -1,10 +1,10 @@
 // headerとfooterの表示
-$(function () {
+window.onload = function () {
   "use strict";
   $("header").load("./include/header.html");
   $(".overlay").load("./include/overlay.html");
   $("footer").load("./include/footer.html");
-});
+};
 
 // グローバルメニュー内の隠れている項目表示
 $(document).on("click", ".el_nav-text", function () {
