@@ -224,15 +224,27 @@ footer {
 }
 
 .el_header-logo {
-  max-width: 30%;
   height: inherit;
   vertical-align: top;
   background-color: #fff;
-  padding-top: 15px;
+  padding: 10px 0 0 10px;
 }
 
 .el_header-logo a {
   display: block;
+  height: 100%;
+}
+
+@media (max-width: 768px) {
+  .el_header-logo {
+    padding: 10px 0 0 0;
+  }
+}
+
+@media (max-width: 426px) {
+  .el_header-logo {
+    padding: 10px 0 0 0;
+  }
 }
 
 .el_over-logo {
@@ -1807,9 +1819,9 @@ input[type="submit"] {
 
 /* /ヘルパーグループend */
 /* ユニークグループ */
-.logo {
-  width: 70%;
-  height: auto;
+.logo img {
+  height: 150%;
+  width: auto;
 }
 
 @media (max-width: 768px) {
@@ -1828,14 +1840,20 @@ input[type="submit"] {
 @media (max-width: 768px) {
   .logo_s {
     display: inline-block;
-    width: 60%;
+  }
+  .logo_s img {
+    width: auto;
+    height: 80%;
   }
 }
 
 @media (max-width: 426px) {
   .logo_s {
     display: inline-block;
-    width: 80%;
+  }
+  .logo_s img {
+    width: auto;
+    height: 80%;
   }
 }
 
