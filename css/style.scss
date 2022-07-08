@@ -137,6 +137,7 @@ footer {
   display: grid;
   grid-template-columns: 2fr 1fr;
   grid-template-rows: auto auto;
+  padding: 40px 0;
 
   @include mq(md) {
     display: flex;
@@ -1679,6 +1680,11 @@ input[type="submit"] {
   @include mq(md) {
     width: 100%;
   }
+}
+
+.hl_scroll {
+  overflow: scroll;
+  max-height: 300px;
 }
 
 /* /ヘルパーグループend */
