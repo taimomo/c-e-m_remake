@@ -133,6 +133,7 @@ footer {
       grid-template-columns: 2fr 1fr;
   -ms-grid-rows: auto auto;
       grid-template-rows: auto auto;
+  padding: 40px 0;
 }
 
 @media (max-width: 768px) {
@@ -1815,6 +1816,11 @@ input[type="submit"] {
   .hl_mdwd-deliTable {
     width: 100%;
   }
+}
+
+.hl_scroll {
+  overflow: scroll;
+  max-height: 300px;
 }
 
 /* /ヘルパーグループend */
