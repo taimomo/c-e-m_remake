@@ -98,7 +98,3 @@ $(function () {
         });
     });
 });
-
-const test = function test() {
-    console.log("リモートテスト");
-};
